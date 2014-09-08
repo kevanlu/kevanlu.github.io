@@ -45,6 +45,6 @@ var tipuesearch = {"pages": [
 	{"title": "Red Cell Indices and Abnormalities", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/blood/2013/10/15/red-cell-indices-abnormalities.html"},
 	{"title": "Normal Hematopoiesis", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/blood/2013/10/15/normal-hematopoiesis.html"},
 	{"title": "Introduction to Blood and Hemoglobin", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/blood/2013/10/15/intro-blood-hemoglobin.html"},
-	{"title": "Hematology", "text": "Course notes for Hematology", "tags": "", "loc": "http://www.schulichnotes.com/blood"}
+	{"title": "Blood", "text": "Course notes for Blood", "tags": "", "loc": "http://www.schulichnotes.com/blood"}
 ]};
 
