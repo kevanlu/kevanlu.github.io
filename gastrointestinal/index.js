@@ -7,7 +7,7 @@ var tipuesearch = {"pages": [
 	{"title": "GI Disorders &ndash; A Family Physician's Perspective", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/10/gi-disorders-family-physician-perspective.html"},
 	{"title": "GI Pharmacology", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/10/pharmacology-gi.html"},
 	{"title": "Small Group &ndash; Esophagus &amp; Stomach", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/09/small-group-esophagus-stomach.html"},
-	{"title": "Microbiology and Medicine &ndash; GI Flora & Infectious Diarrhea", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/09/microbiology-medicine-gi-flora-infectious-diarrhea.html"},
+	{"title": "Microbiology and Medicine &ndash; GI Flora &amp; Infectious Diarrhea", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/09/microbiology-medicine-gi-flora-infectious-diarrhea.html"},
 	{"title": "Medicine and Pathology &ndash; Diarrhea and Malabsorption", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/09/medicine-pathology-diarrhea-malabsorption.html"},
 	{"title": "Anatomy Lab &ndash; Intestines, Blood Supply and Nerve Supply", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/08/anatomy-lab-intestines-blood-nerves.html"},
 	{"title": "Anatomy &ndash; Intestines, Blood Supply and Nerve Supply", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/08/anatomy-intestines-blood-nerves.html"},
