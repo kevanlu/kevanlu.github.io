@@ -24,8 +24,8 @@
 	
 	<!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+	
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/157117/notes/resources/stylesheets/layout.css">
@@ -698,11 +698,7 @@
 <script>
 var search = document.getElementById('header-search-icon');
 var searchbar = document.getElementById('header-search-bar');
-var overlay = document.getElementById('overlay');
-search.onclick = function(){
-    classie.toggle(searchbar, 'search-bar-open');
-    classie.toggle (overlay, 'overlay-pushed');
-}
+search.onclick = function(){classie.toggle(searchbar, 'search-bar-open');}
 $(document).ready(function() {$('#tipue_search_input').tipuesearch();});
 </script>
 </body>
