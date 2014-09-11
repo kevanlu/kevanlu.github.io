@@ -48,6 +48,17 @@
 	<link rel="shortcut icon" href="https://dl.dropboxusercontent.com/u/157117/Class%20References/favicon.png" type="image/png">
 </head>
 <body>
+	<div class="home-overlay">
+	<div class="index"><a href="http://www.schulichnotes.com"><i class="fa fa-stethoscope"></i> Schulich Notes</a></div>
+	<div id="header-search-icon"><a id="header-search-button"><i class="fa fa-search"></i></a></div>
+</div>
+<div id="header-search-bar">
+	<form class="search" action="http://www.schulichnotes.com/respirology/search.html">
+	<div><input type="text" value="Search Respiration &amp; Airways" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" name="q" id="tipue_search_input"></div>
+	<div><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div>
+	</form>
+</div>
+<div class="overlay"><h1><a style="border:none;" href="http://www.schulichnotes.com/respirology">Respiration &amp; Airways</a></h1></div>
 	<div class="sidebar-background"></div>
     <div class="sidebar">
         <!-- Displays a Search Bar-->
@@ -134,24 +145,14 @@
     	<div class="content-background"></div>
     	<div class="index-header"></div>
 		<div class="content">
-
+			
 			<!-- Title and Image -->
 			<div id="course-title"><h1>Respiration &amp; Airways</h1></div>
 			<div id="personal-name"><h2><a href="http://www.kevan.lu">Kevan Lu</a></h2></div>
 			<div id="course-year"><h2>Preclerkship Year 1, Winter 2014</h2></div>
  			<div id="course-art"><img class="cover-art" src="https://dl.dropboxusercontent.com/u/157117/Class%20References/image961.gif"></div>
 
-			<!-- Displays links to textbooks-->
-			<div id="toc-title"><h2>Course Textbooks</h2></div>
-			<hr id="textbook-rule">
- 			<ol style="margin-left:0px;">
-				<li id="textbook-title"><a href="https://dl.dropboxusercontent.com/u/157117/Class%20References/Respiratory%20Physiology%20The%20Essentials%209th%20Edition.pdf">Respiratory Physiology &ndash; The Essentials</a></li>
-				<ul><li id="author">John B. West</li></ul>
-				<li id="textbook-title"><a href="https://dl.dropboxusercontent.com/u/157117/Class%20References/Vol%203-%20The%20Netter%20Collection%20of%20Medical%20Illustrations%2C%202E.%20Vol%203-%20Respiratory%20System.pdf">Netter Medical Illustrations &ndash; Respiratory System</a></li>
-				<ul><li id="author">David A. Kaminsky, Illustrations by Frank Netter</li></ul>
-			</ol>
-
-			<!-- Lists a table of contents-->
+ 			<!-- Lists a table of contents-->
 <div class="toc">
 	<div id="toc-title"><h2>Table of Contents</h2></div>
 	<div class="row">
@@ -246,11 +247,17 @@
 <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/157117/notes/resources/stylesheets/search.css">	
 <script src="https://dl.dropboxusercontent.com/u/157117/notes/resources/libraries/tipuesearch_set.js" type="text/javascript"></script>
 <script src="https://dl.dropboxusercontent.com/u/157117/notes/resources/libraries/tipuesearch.js" type="text/javascript"></script>
-
 <script>
-$(document).ready(function() {
-     $('#tipue_search_input').tipuesearch();
-});
+var search = document.getElementById('header-search-button');
+function toggle_visibility(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'block')
+      e.style.display = 'none';
+   else
+      e.style.display = 'block';
+}
+search.onclick = function(){toggle_visibility('header-search-bar');}
+$(document).ready(function() {$('#tipue_search_input').tipuesearch();});
 </script>
 </body>
 </html>
