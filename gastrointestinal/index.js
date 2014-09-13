@@ -1,5 +1,5 @@
 var tipuesearch = {"pages": [
-	{"title": "Anatomy Lab &ndash; Intestines", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/12/anatomy-lab-intestines.html"},
+	{"title": "Anatomy Lab &ndash; Intestines", "text": "  Intestines Notes      See Intestines Lab Notes    Intestines Lab Instructions      See Intestines Lab Instructions    Intestines Cases      See Intestines Anatomy Cases  Netter’s Plates", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/12/anatomy-lab-intestines.html"},
 	{"title": "Irritable Bowel Disease Day", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/12/irritable-bowel-disease-day.html"},
 	{"title": "Functional Gut Disorders", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/11/functional-gut-disorders.html"},
 	{"title": "GI Diagnostic Imaging", "text": "", "tags": "", "loc": "http://www.schulichnotes.com/gastrointestinal/2014/09/11/gi-diagnostic-imaging.html"},
