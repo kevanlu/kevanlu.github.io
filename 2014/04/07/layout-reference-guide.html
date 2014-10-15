@@ -1,0 +1,252 @@
+<h1 id="introduction-to-markdown">Introduction to Markdown</h1>
+<div class="leftnote">1.</div>
+<hr />
+
+<p>To write compatible course notes, you need to be familiar with <a href="http://daringfireball.net/projects/markdown/">Markdown</a>. Markdown is a tool that lets you automatically convert a plain-text document into an HTML file. All you need to do is follow a few specific <em>formatting rules</em>.</p>
+
+<p>If anything is left unclear after this guide, you can start by looking at the raw source files for existing lecture notes. They’re all accessible from the Shared Dropbox folder.</p>
+
+<h1 id="entering-basic-notes">Entering Basic Notes</h1>
+<div class="leftnote">2.</div>
+<hr />
+
+<h2 id="headers">Headers</h2>
+<ul>
+  <li><strong>Main Headings</strong> are ‘underlined’ by <code>=</code>. These are followed by a horizontal rule, entered with <code>&lt;hr&gt;</code>.</li>
+</ul>
+
+<pre><code>This is a Main Header
+=====================
+&lt;hr&gt;</code></pre>
+
+<ul>
+  <li><strong>Sub-headings</strong> are ‘underlined’ by <code>-</code>. These are usually emphasized by surrounding the text with <code>**</code>.</li>
+</ul>
+
+<pre><code>**This is a Second Level Header**
+---------------------------------</code></pre>
+
+<ul>
+  <li><strong>Smaller Headings</strong> can be made by prepending the heading with an appropriate number of <code>#</code> signs. <code>###</code> will make a 3rd-level header, <code>####</code> will make a 4th level header, etc.</li>
+</ul>
+
+<pre><code>###**This is a 3rd Level Header**
+####**This is a 4th Level Header**
+#####**This is a 5th Level Header**
+######**This is a 6th Level Header**</code></pre>
+
+<h2 id="paragraphs-and-formatting">Paragraphs and Formatting</h2>
+<ul>
+  <li><strong>Paragraphs</strong> are entered just like you would normally write a paragraph.</li>
+  <li>If you want to <em>bold</em> some text, surround it like <code>*this*</code></li>
+  <li>If you want to <strong>underline</strong> some text, surround it like <code>**this**</code></li>
+</ul>
+
+<h3 id="superscripts-subscripts">Superscripts, Subscripts</h3>
+<ul>
+  <li>If you want to <em>superscript</em> some text, such as in Na<sup>2+</sup>, surround it like <code>&lt;sup&gt;this&lt;/sup&gt;</code>.</li>
+  <li>If you want to <em>subscript</em> some text, such as in P<sub>A</sub>CO<sub>2</sub>, surround it like <code>&lt;sub&gt;this&lt;/sub&gt;</code>.</li>
+</ul>
+
+<h3 id="special-characters">Special Characters</h3>
+<ul>
+  <li>Some special characters that come in handy include:
+    <ol>
+      <li><strong>Right Arrow (→)</strong>, which can be entered with <code>&amp;rarr;</code></li>
+      <li><strong>Left Arrow (→)</strong>, which can be entered with <code>&amp;larr;</code></li>
+      <li><strong>Greater-than (&gt;)</strong> and <strong>Less-than (&lt;)</strong>, which can be entered with <code>&amp;gt;</code> and <code>&amp;lt;</code> respectively.</li>
+      <li><strong>Degree (°)</strong>, which can be entered with <code>&amp;deg;</code></li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="bulleted-and-numbered-lists">Bulleted and Numbered Lists</h2>
+<ul>
+  <li><strong>Bulleted lists</strong> are made by adding a dash before each point.</li>
+  <li><strong>Numbered lists</strong> are made by adding numbers followed by periods, before each point.</li>
+  <li><strong>Nested lists</strong> are made by indenting the list.</li>
+</ul>
+
+<pre><code>**Bulleted Lists**
+- This is a bulleted list.
+- This is the second bullet.
+- This is the third bullet.
+
+**Numbered Lists**
+1. This is a numbered list.
+2. This is the second number.
+3. This is the third number.
+
+**Nested Lists**
+- This is a top-level bullet.
+	- This is a second-level bullet.
+	- This is another second level bullet.</code></pre>
+
+<h2 id="combined-example">Combined Example</h2>
+<p>Below is an <strong>example</strong> of everything that has been described above:</p>
+
+<pre>
+<code>Anatomy of the Larynx
+=====================
+&lt;hr&gt;
+###**Intrinsic vs Extrinsic Muscles**
+- **Extrinsic muscles** &amp;rarr; on the **outside** of the larynx. 
+	- These are all innervated by *vagus* (cranial nerve X).
+	- These are also known as the **strap muscles**.
+
+- **Intrinsic muscles** &amp;rarr; on the **inside** of the larynx.
+	- Innervation of the intrinsic muscles is more complicated.
+	- They're also innervated by branches of *vagus*, namely:
+		1. *Superior Laryngeal Nerve* (SLN).
+		2. *Recurrent Laryngeal Nerve* (RLN).</code>
+</pre>
+
+<p>When converted into HTML, this is what you will see on the website:</p>
+
+<iframe class="preview_pane_1" src="previews/preview1.html">
+</iframe>
+
+<h1 id="advanced-features">Advanced Features</h1>
+<div class="leftnote">3.</div>
+<hr />
+
+<h2 id="images">Images</h2>
+
+<p><img class="right" src="images/magikarp.png" />
+Images can either be displayed <strong>beneath</strong> the text, or <strong>beside</strong> the text. An example of an image placed <em>beside the text</em> is shown to the right.</p>
+
+<ul>
+  <li><strong>Beneath the text</strong> images are added with the following code:<br /><code>&lt;img src="IMAGE_URL.jpg"&gt;</code></li>
+  <li><strong>Beside the text</strong> images are added with the following code:<br /><code>&lt;img class="right" src="IMAGE_URL.jpg"&gt;</code></li>
+</ul>
+
+<p>Below is an example of an image placed <em>beneath the text</em>. For full-width images, you can also add a figure caption. To do this, write your caption after the image, and surround the caption with backticks → <code>`</code>.</p>
+
+<p><img src="images/gyarados.png" />
+&lt;div id="caption"&gt;This is an example of what a figure caption will look like. To make one, surround these sentences with backticks.&lt;/div&gt;</p>
+
+<p>An example of this is:</p>
+
+<pre><code>&lt;img src="IMAGE_URL.jpg"&gt;
+`My caption is here.`</code></pre>
+
+<p>When linking to images, make sure you <em>save a copy</em> on the shared Dropbox folder, so that there’s a central location where all the image references are located.</p>
+
+<h2 id="emphasis-boxes">Emphasis Boxes</h2>
+
+<p>If you want to <em>reinforce</em> a particular point or concept, you can put it in an <strong>emphasis box</strong>. To put something in an emphasis box, just add a <code>&gt;</code> to the beginning of each line you want to include. For instance, the following Markdown:</p>
+
+<pre><code>&gt; ###**ASD Acronym for Aortic Stenosis**
+&gt; - **Angina** &rarr; 50% of patients die within *5 years of onset*
+&gt; - **Syncope** &rarr; 50% of patients die within *3 years of onset*
+&gt; - **Dyspnea** &rarr; 50% of patients die within *2 years of onset*
+</code></pre>
+
+<p>Will result in the following emphasis box:</p>
+
+<blockquote>
+  <h3 id="asd-acronym-for-aortic-stenosis"><strong>ASD Acronym for Aortic Stenosis</strong></h3>
+  <ul>
+    <li><strong>Angina</strong> → 50% of patients die within <em>5 years of onset</em></li>
+    <li><strong>Syncope</strong> → 50% of patients die within <em>3 years of onset</em></li>
+    <li><strong>Dyspnea</strong> → 50% of patients die within <em>2 years of onset</em></li>
+  </ul>
+</blockquote>
+
+<h2 id="equations">Equations</h2>
+
+<p>You can input <span>( \LaTeX )</span> code into your notes if you need to write equations. LaTeX is a typesetting system that is popular for technical and scientific writing. It’s fairly complex, so only some examples will be shown here:</p>
+
+<ol>
+  <li><strong>The Alveolar Gas Equation</strong>
+    <pre><code>&lt;span&gt;$$ P_AO_2 = P_IO_2 - \frac{P_ACO_2}{0.8}$$&lt;/span&gt;</code></pre>
+    <p><span><script type="math/tex"> P_AO_2 = P_IO_2 - \frac{P_ACO_2}{0.8}</script></span></p>
+  </li>
+  <li><strong>The Pulmonary Vascular Resistance</strong> 
+    <pre><code>&lt;span&gt;$$PVR = \frac{\overline{P_{pa}} - \overline{P_{pv}}}{CO}$$&lt;/span&gt;</code></pre>
+    <p><span><script type="math/tex">PVR = \frac{\overline{P_{pa}} - \overline{P_{pv}}}{CO}</script></span></p>
+  </li>
+  <li><strong>Chemical Equations</strong>
+    <pre><code>&lt;span&gt;$$H_2O + CO_2 \rightarrow H_2CO_3 \rightarrow HCO_3^- + H^+$$&lt;/span&gt;</code></pre>
+    <p><span><script type="math/tex">H_2O + CO_2 \rightarrow H_2CO_3 \rightarrow HCO_3^- + H^+</script></span></p>
+  </li>
+</ol>
+
+<h5 id="multi-line-equations"><strong>Multi-Line Equations</strong></h5>
+
+<pre><code>&lt;span&gt;\begin{align}
+	FE_{Na} &amp;= \frac{[Na]_u/[Na]_p}{[\text{Creat}]_u/[\text{Creat}]_p} \times 100\%\\
+	FE_{Na} &amp;= \frac{15/160}{6000/90} \times 100\%\\
+	FE_{Na} &amp;= \frac{15/160}{6000/90} \times 100\%\\
+	FE_{Na} &amp;= \frac{15/160}{6000/90} \times 100\%\\
+	FE_{Na} &amp;= 0.14\%
+\end{align}
+&lt;/span&gt;</code></pre>
+
+<p><span><script type="math/tex">% <![CDATA[
+
+\begin{align}
+	FE_{Na} &= \frac{[Na]_u/[Na]_p}{[\text{Creat}]_u/[\text{Creat}]_p} \times 100\%\\
+	FE_{Na} &= \frac{15/160}{6000/90} \times 100\%\\
+	FE_{Na} &= \frac{15/160}{6000/90} \times 100\%\\
+	FE_{Na} &= \frac{15/160}{6000/90} \times 100\%\\
+	FE_{Na} &= 0.14\%
+\end{align}
+ %]]></script></span></p>
+
+<h5 id="inline-equations"><strong>Inline Equations</strong></h5>
+<pre><code>- The &lt;span&gt;\( \dot{V}_{CO_2} \)&lt;/span&gt; is the rate of carbon dioxide loss from the body.
+- The &lt;span&gt;\( \dot{V}_{O_2} \)&lt;/span&gt; is the rate of oxygen intake from the air.
+- **Hyperventilation:** &amp;rarr; &lt;span&gt;\( P_ACO_2 \)&lt;/span&gt; &amp;darr;
+- **Hypoventilation:** &amp;rarr; **&lt;span&gt;\( P_ACO_2 \)&lt;/span&gt;** &amp;uarr;
+</code></pre>
+
+<iframe class="preview_pane_3" src="previews/preview3.html">
+</iframe>
+
+<h2 id="tables">Tables</h2>
+<p><strong>Tables</strong> can be entered by following the formatting shown below:</p>
+
+<pre><code>| Lab Test            | Value        | Normal Values   |
+|---------------------|--------------|-----------------|
+| *pH*                | 7.35         | 7.4             |
+| *PCO&lt;sub&gt;2&lt;/sub&gt;*   | 60 mmHg      | 40 mmHg         |
+| *HCO&lt;sub&gt;3&lt;/sub&gt;*   | 32 mmol/L    | 24-26 mmHg      |
+</code></pre>
+
+<p>Which will result in:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lab Test</th>
+      <th>Value</th>
+      <th>Normal Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>pH</em></td>
+      <td>7.35</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <td><em>PCO<sub>2</sub></em></td>
+      <td>60 mmHg</td>
+      <td>40 mmHg</td>
+    </tr>
+    <tr>
+      <td><em>HCO<sub>3</sub></em></td>
+      <td>32 mmol/L</td>
+      <td>24-26 mmHg</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="side-notes">Side-Notes</h2>
+<p><span class="two columns side-note">This is a side-note. It’ll appear to the right of the body text when seen on the final website, just like this.</span>
+<strong>Side-notes</strong> can be used if you want to add some clarification, or an aside, to a point. A side-note can be seen to the right of this passage. The code for this is shown below:</p>
+
+<pre><code>&lt;span class="sidenote"&gt;This is a side-note. It'll appear to the right of the body text when seen on the final website, just like this.&lt;/span&gt;
+</code></pre>
+
