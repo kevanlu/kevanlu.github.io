@@ -98,29 +98,30 @@
 
 <p>When converted into HTML, this is what you will see on the website:</p>
 
-<h1 id="anatomy-of-the-larynx">Anatomy of the Larynx</h1>
-<hr />
-
-<h3 id="intrinsic-vs-extrinsic-muscles"><strong>Intrinsic vs Extrinsic Muscles</strong></h3>
-<ul>
-  <li><strong>Extrinsic muscles</strong> → on the <strong>outside</strong> of the larynx. 
-    <ul>
-      <li>These are all innervated by <em>vagus</em> (cranial nerve X).</li>
-      <li>These are also known as the <strong>strap muscles</strong>.</li>
-    </ul>
-  </li>
-  <li><strong>Intrinsic muscles</strong> → on the <strong>inside</strong> of the larynx.
-    <ul>
-      <li>Innervation of the intrinsic muscles is more complicated.</li>
-      <li>They’re also innervated by branches of <em>vagus</em>, namely:
-        <ol>
-          <li><em>Superior Laryngeal Nerve</em> (SLN).</li>
-          <li><em>Recurrent Laryngeal Nerve</em> (RLN).&lt;/code&gt;</li>
-        </ol>
-      </li>
-    </ul>
-  </li>
-</ul>
+<div class="preview">
+	<h1 id="anatomy-of-the-larynx">Anatomy of the Larynx</h1>
+	<hr />
+	<h3 id="intrinsic-vs-extrinsic-muscles"><strong>Intrinsic vs Extrinsic Muscles</strong></h3>
+	<ul>
+	  <li><strong>Extrinsic muscles</strong> → on the <strong>outside</strong> of the larynx. 
+	    <ul>
+	      <li>These are all innervated by <em>vagus</em> (cranial nerve X).</li>
+	      <li>These are also known as the <strong>strap muscles</strong>.</li>
+	    </ul>
+	  </li>
+	  <li><strong>Intrinsic muscles</strong> → on the <strong>inside</strong> of the larynx.
+	    <ul>
+	      <li>Innervation of the intrinsic muscles is more complicated.</li>
+	      <li>They’re also innervated by branches of <em>vagus</em>, namely:
+	        <ol>
+	          <li><em>Superior Laryngeal Nerve</em> (SLN).</li>
+	          <li><em>Recurrent Laryngeal Nerve</em> (RLN).&lt;/code&gt;</li>
+	        </ol>
+	      </li>
+	    </ul>
+	  </li>
+	</ul>
+</div>
 
 <h1 id="advanced-features">Advanced Features</h1>
 <div class="leftnote">3.</div>
@@ -138,8 +139,9 @@ Images can either be displayed <strong>beneath</strong> the text, or <strong>bes
 
 <p>Below is an example of an image placed <em>beneath the text</em>. For full-width images, you can also add a figure caption. To do this, write your caption after the image, and surround the caption with backticks → <code>`</code>.</p>
 
-<p><img src="images/gyarados.png" />
-&lt;div id="caption"&gt;This is an example of what a figure caption will look like. To make one, surround these sentences with backticks.&lt;/div&gt;</p>
+<p><img src="images/gyarados.png" /></p>
+
+<div id="caption">This is an example of what a figure caption will look like. To make one, surround these sentences with backticks.</div>
 
 <p>An example of this is:</p>
 
@@ -160,14 +162,16 @@ Images can either be displayed <strong>beneath</strong> the text, or <strong>bes
 
 <p>Will result in the following emphasis box:</p>
 
-<blockquote>
-  <h3 id="asd-acronym-for-aortic-stenosis"><strong>ASD Acronym for Aortic Stenosis</strong></h3>
-  <ul>
-    <li><strong>Angina</strong> → 50% of patients die within <em>5 years of onset</em></li>
-    <li><strong>Syncope</strong> → 50% of patients die within <em>3 years of onset</em></li>
-    <li><strong>Dyspnea</strong> → 50% of patients die within <em>2 years of onset</em></li>
-  </ul>
-</blockquote>
+<div class="preview">
+	<blockquote>
+	  <h3 id="asd-acronym-for-aortic-stenosis"><strong>ASD Acronym for Aortic Stenosis</strong></h3>
+	  <ul>
+	    <li><strong>Angina</strong> → 50% of patients die within <em>5 years of onset</em></li>
+	    <li><strong>Syncope</strong> → 50% of patients die within <em>3 years of onset</em></li>
+	    <li><strong>Dyspnea</strong> → 50% of patients die within <em>2 years of onset</em></li>
+	  </ul>
+	</blockquote>
+</div>
 
 <h2 id="equations">Equations</h2>
 
@@ -175,11 +179,11 @@ Images can either be displayed <strong>beneath</strong> the text, or <strong>bes
 
 <ul>
   <li><strong>The Alveolar Gas Equation</strong>
-    <pre><code>$$ P_AO_2 = P_IO_2 - \frac{P_ACO_2}{0.8}$$</code></pre>
+    <pre><code>$$P_AO_2 = P_IO_2 - \frac{P_ACO_2}{0.8}$$</code></pre>
   </li>
 </ul>
 
-<script type="math/tex; mode=display"> P_AO_2 = P_IO_2 - \frac{P_ACO_2}{0.8}</script>
+<script type="math/tex; mode=display">P_AO_2 = P_IO_2 - \frac{P_ACO_2}{0.8}</script>
 
 <ul>
   <li><strong>The Pulmonary Vascular Resistance</strong> 
@@ -199,7 +203,8 @@ Images can either be displayed <strong>beneath</strong> the text, or <strong>bes
 
 <h3 id="multi-line-equations">Multi-Line Equations</h3>
 
-<pre><code>$$\begin{align}
+<pre><code>$$
+\begin{align}
 	FE_{Na} &amp;= \frac{[Na]_u/[Na]_p}{[\text{Creat}]_u/[\text{Creat}]_p} \times 100\%\\
 	FE_{Na} &amp;= \frac{15/160}{6000/90} \times 100\%\\
 	FE_{Na} &amp;= \frac{15/160}{6000/90} \times 100\%\\
@@ -273,8 +278,7 @@ $$</code></pre>
 </table>
 
 <h2 id="side-notes">Side-Notes</h2>
-<p><span class="reference-sidenote">This is a side-note. It’ll appear to the side of the body text when seen on the final website, just like this.</span>
-<strong>Side-notes</strong> can be used if you want to add some clarification, or an aside, to a point. A side-note can be seen to the side of this passage. The code for this is shown below:</p>
+<p><strong>Side-notes</strong> can be used if you want to add some clarification, or an aside, to a point. A side-note will be placed to the right of a passage. The code for this is shown below:</p>
 
 <pre><code>&lt;span class="sidenote"&gt;This is a side-note. It'll appear to the right of the body text when seen on the final website, just like this.&lt;/span&gt;
 </code></pre>
