@@ -12,28 +12,22 @@
 
 <h2 id="headers">Headers</h2>
 <ul>
-  <li><strong>Main Headings</strong> are ‘underlined’ by <code>=</code>. These are followed by a horizontal rule, entered with <code>&lt;hr&gt;</code>.</li>
-</ul>
-
-<pre><code>This is a Main Header
+  <li><strong>Main Headings</strong> are ‘underlined’ by <code>=</code>. These are followed by a horizontal rule, entered with <code>&lt;hr&gt;</code>.
+    <pre><code>This is a Main Header
 =====================
 &lt;hr&gt;</code></pre>
-
-<ul>
-  <li><strong>Sub-headings</strong> are ‘underlined’ by <code>-</code>. These are usually emphasized by surrounding the text with <code>**</code>.</li>
-</ul>
-
-<pre><code>**This is a Second Level Header**
+  </li>
+  <li><strong>Sub-headings</strong> are ‘underlined’ by <code>-</code>. These are usually emphasized by surrounding the text with <code>**</code>.
+    <pre><code>**This is a Second Level Header**
 ---------------------------------</code></pre>
-
-<ul>
-  <li><strong>Smaller Headings</strong> can be made by prepending the heading with an appropriate number of <code>#</code> signs. <code>###</code> will make a 3rd-level header, <code>####</code> will make a 4th level header, etc.</li>
-</ul>
-
-<pre><code>###**This is a 3rd Level Header**
+  </li>
+  <li><strong>Smaller Headings</strong> can be made by prepending the heading with an appropriate number of <code>#</code> signs. <code>###</code> will make a 3rd-level header, <code>####</code> will make a 4th level header, etc.
+    <pre><code>###**This is a 3rd Level Header**
 ####**This is a 4th Level Header**
 #####**This is a 5th Level Header**
 ######**This is a 6th Level Header**</code></pre>
+  </li>
+</ul>
 
 <h2 id="paragraphs-and-formatting">Paragraphs and Formatting</h2>
 <ul>
@@ -64,23 +58,24 @@
 <ul>
   <li><strong>Bulleted lists</strong> are made by adding a dash before each point.</li>
   <li><strong>Numbered lists</strong> are made by adding numbers followed by periods, before each point.</li>
-  <li><strong>Nested lists</strong> are made by indenting the list.</li>
+  <li><strong>Nested lists</strong> are made by indenting the list.
+    <pre><code>**Bulleted Lists**
+</code></pre>
+  </li>
+  <li>This is a bulleted list.</li>
+  <li>This is the second bullet.</li>
+  <li>This is the third bullet.</li>
 </ul>
 
-<pre><code>**Bulleted Lists**
-- This is a bulleted list.
-- This is the second bullet.
-- This is the third bullet.
-
-**Numbered Lists**
+<p><strong>Numbered Lists</strong>
 1. This is a numbered list.
 2. This is the second number.
-3. This is the third number.
+3. This is the third number.</p>
 
-**Nested Lists**
+<p><strong>Nested Lists</strong>
 - This is a top-level bullet.
 	- This is a second-level bullet.
-	- This is another second level bullet.</code></pre>
+	- This is another second level bullet.&lt;/code&gt;&lt;/pre&gt;</p>
 
 <h2 id="combined-example">Combined Example</h2>
 <p>Below is an <strong>example</strong> of everything that has been described above:</p>
@@ -103,8 +98,29 @@
 
 <p>When converted into HTML, this is what you will see on the website:</p>
 
-<iframe class="preview_pane_1" src="previews/preview1.html">
-</iframe>
+<h1 id="anatomy-of-the-larynx">Anatomy of the Larynx</h1>
+<hr />
+
+<h3 id="intrinsic-vs-extrinsic-muscles"><strong>Intrinsic vs Extrinsic Muscles</strong></h3>
+<ul>
+  <li><strong>Extrinsic muscles</strong> → on the <strong>outside</strong> of the larynx. 
+    <ul>
+      <li>These are all innervated by <em>vagus</em> (cranial nerve X).</li>
+      <li>These are also known as the <strong>strap muscles</strong>.</li>
+    </ul>
+  </li>
+  <li><strong>Intrinsic muscles</strong> → on the <strong>inside</strong> of the larynx.
+    <ul>
+      <li>Innervation of the intrinsic muscles is more complicated.</li>
+      <li>They’re also innervated by branches of <em>vagus</em>, namely:
+        <ol>
+          <li><em>Superior Laryngeal Nerve</em> (SLN).</li>
+          <li><em>Recurrent Laryngeal Nerve</em> (RLN).&lt;/code&gt;</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
 
 <h1 id="advanced-features">Advanced Features</h1>
 <div class="leftnote">3.</div>
@@ -201,8 +217,12 @@ Images can either be displayed <strong>beneath</strong> the text, or <strong>bes
 - **Hypoventilation:** &amp;rarr; **&lt;span&gt;\( P_ACO_2 \)&lt;/span&gt;** &amp;uarr;
 </code></pre>
 
-<iframe class="preview_pane_3" src="previews/preview3.html">
-</iframe>
+<ul>
+  <li>The <span>( \dot{V}_{CO_2} )</span> is the rate of carbon dioxide loss from the body.</li>
+  <li>The <span>( \dot{V}_{O_2} )</span> is the rate of oxygen intake from the air.</li>
+  <li><strong>Hyperventilation:</strong> &amp;rarr; <span>( P_ACO_2 )</span> &amp;darr;</li>
+  <li><strong>Hypoventilation:</strong> &amp;rarr; <strong><span>( P_ACO_2 )</span></strong> &amp;uarr;</li>
+</ul>
 
 <h2 id="tables">Tables</h2>
 <p><strong>Tables</strong> can be entered by following the formatting shown below:</p>
