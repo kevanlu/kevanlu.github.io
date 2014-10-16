@@ -30,8 +30,7 @@
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/157117/notes/resources/stylesheets/layout.css">
-	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/157117/notes/resources/stylesheets/content.css">
-	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/157117/notes/resources/stylesheets/print.css">
+	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/157117/notes/resources/stylesheets/home.css">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">	
 	
 	<script>
@@ -427,35 +426,44 @@ Images can either be displayed <strong>beneath</strong> the text, or <strong>bes
 
 <h2 id="equations">Equations</h2>
 
-<p>You can input <span>( \LaTeX )</span> code into your notes if you need to write equations. LaTeX is a typesetting system that is popular for technical and scientific writing. It’s fairly complex, so only some examples will be shown here:</p>
+<p>You can input <script type="math/tex">\LaTeX</script> code into your notes if you need to write equations. LaTeX is a typesetting system that is popular for technical and scientific writing. It’s fairly complex, so only some examples will be shown here:</p>
 
-<ol>
+<ul>
   <li><strong>The Alveolar Gas Equation</strong>
-    <pre><code>&lt;span&gt;$$ P_AO_2 = P_IO_2 - \frac{P_ACO_2}{0.8}$$&lt;/span&gt;</code></pre>
-    <p><span><script type="math/tex"> P_AO_2 = P_IO_2 - \frac{P_ACO_2}{0.8}</script></span></p>
+    <pre><code>$$ P_AO_2 = P_IO_2 - \frac{P_ACO_2}{0.8}$$</code></pre>
   </li>
+</ul>
+
+<script type="math/tex; mode=display"> P_AO_2 = P_IO_2 - \frac{P_ACO_2}{0.8}</script>
+
+<ul>
   <li><strong>The Pulmonary Vascular Resistance</strong> 
-    <pre><code>&lt;span&gt;$$PVR = \frac{\overline{P_{pa}} - \overline{P_{pv}}}{CO}$$&lt;/span&gt;</code></pre>
-    <p><span><script type="math/tex">PVR = \frac{\overline{P_{pa}} - \overline{P_{pv}}}{CO}</script></span></p>
+    <pre><code>$$PVR = \frac{\overline{P_{pa}} - \overline{P_{pv}}}{CO}$$</code></pre>
   </li>
+</ul>
+
+<script type="math/tex; mode=display">PVR = \frac{\overline{P_{pa}} - \overline{P_{pv}}}{CO}</script>
+
+<ul>
   <li><strong>Chemical Equations</strong>
-    <pre><code>&lt;span&gt;$$H_2O + CO_2 \rightarrow H_2CO_3 \rightarrow HCO_3^- + H^+$$&lt;/span&gt;</code></pre>
-    <p><span><script type="math/tex">H_2O + CO_2 \rightarrow H_2CO_3 \rightarrow HCO_3^- + H^+</script></span></p>
+    <pre><code>$$H_2O + CO_2 \rightarrow H_2CO_3 \rightarrow HCO_3^- + H^+$$</code></pre>
   </li>
-</ol>
+</ul>
 
-<h5 id="multi-line-equations"><strong>Multi-Line Equations</strong></h5>
+<script type="math/tex; mode=display">H_2O + CO_2 \rightarrow H_2CO_3 \rightarrow HCO_3^- + H^+</script>
 
-<pre><code>&lt;span&gt;\begin{align}
+<h3 id="multi-line-equations">Multi-Line Equations</h3>
+
+<pre><code>$$\begin{align}
 	FE_{Na} &amp;= \frac{[Na]_u/[Na]_p}{[\text{Creat}]_u/[\text{Creat}]_p} \times 100\%\\
 	FE_{Na} &amp;= \frac{15/160}{6000/90} \times 100\%\\
 	FE_{Na} &amp;= \frac{15/160}{6000/90} \times 100\%\\
 	FE_{Na} &amp;= \frac{15/160}{6000/90} \times 100\%\\
 	FE_{Na} &amp;= 0.14\%
 \end{align}
-&lt;/span&gt;</code></pre>
+$$</code></pre>
 
-<p><span><script type="math/tex">% <![CDATA[
+<script type="math/tex; mode=display">% <![CDATA[
 
 \begin{align}
 	FE_{Na} &= \frac{[Na]_u/[Na]_p}{[\text{Creat}]_u/[\text{Creat}]_p} \times 100\%\\
@@ -464,20 +472,20 @@ Images can either be displayed <strong>beneath</strong> the text, or <strong>bes
 	FE_{Na} &= \frac{15/160}{6000/90} \times 100\%\\
 	FE_{Na} &= 0.14\%
 \end{align}
- %]]></script></span></p>
+ %]]></script>
 
-<h5 id="inline-equations"><strong>Inline Equations</strong></h5>
-<pre><code>- The &lt;span&gt;\( \dot{V}_{CO_2} \)&lt;/span&gt; is the rate of carbon dioxide loss from the body.
-- The &lt;span&gt;\( \dot{V}_{O_2} \)&lt;/span&gt; is the rate of oxygen intake from the air.
-- **Hyperventilation:** &amp;rarr; &lt;span&gt;\( P_ACO_2 \)&lt;/span&gt; &amp;darr;
-- **Hypoventilation:** &amp;rarr; **&lt;span&gt;\( P_ACO_2 \)&lt;/span&gt;** &amp;uarr;
+<h3 id="inline-equations">Inline Equations</h3>
+<pre><code>- The $$\dot{V}_{CO_2}$$ is the rate of carbon dioxide loss from the body.
+- The $$\dot{V}_{O_2}$$ is the rate of oxygen intake from the air.
+- **Hyperventilation:** &amp;rarr; $$P_ACO_2$$ &amp;darr;
+- **Hypoventilation:** &amp;rarr; $$P_ACO_2$$ &amp;uarr;
 </code></pre>
 
 <ul>
-  <li>The <span>( \dot{V}_{CO_2} )</span> is the rate of carbon dioxide loss from the body.</li>
-  <li>The <span>( \dot{V}_{O_2} )</span> is the rate of oxygen intake from the air.</li>
-  <li><strong>Hyperventilation:</strong> &amp;rarr; <span>( P_ACO_2 )</span> &amp;darr;</li>
-  <li><strong>Hypoventilation:</strong> &amp;rarr; <strong><span>( P_ACO_2 )</span></strong> &amp;uarr;</li>
+  <li>The <script type="math/tex">\dot{V}_{CO_2}</script> is the rate of carbon dioxide loss from the body.</li>
+  <li>The <script type="math/tex">\dot{V}_{O_2}</script> is the rate of oxygen intake from the air.</li>
+  <li><strong>Hyperventilation:</strong> → <script type="math/tex">P_ACO_2</script> ↓</li>
+  <li><strong>Hypoventilation:</strong> → <script type="math/tex">P_ACO_2</script> ↑</li>
 </ul>
 
 <h2 id="tables">Tables</h2>
@@ -520,8 +528,8 @@ Images can either be displayed <strong>beneath</strong> the text, or <strong>bes
 </table>
 
 <h2 id="side-notes">Side-Notes</h2>
-<p><span class="two columns side-note">This is a side-note. It’ll appear to the right of the body text when seen on the final website, just like this.</span>
-<strong>Side-notes</strong> can be used if you want to add some clarification, or an aside, to a point. A side-note can be seen to the right of this passage. The code for this is shown below:</p>
+<p><span class="reference-sidenote">This is a side-note. It’ll appear to the side of the body text when seen on the final website, just like this.</span>
+<strong>Side-notes</strong> can be used if you want to add some clarification, or an aside, to a point. A side-note can be seen to the side of this passage. The code for this is shown below:</p>
 
 <pre><code>&lt;span class="sidenote"&gt;This is a side-note. It'll appear to the right of the body text when seen on the final website, just like this.&lt;/span&gt;
 </code></pre>
