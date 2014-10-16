@@ -89,6 +89,69 @@
 		</div>
 	</div>
 </div>
+
+<!-- Scripts for the Random URL -->
+<script>
+	urls = new Array;
+	function changeRandomURL (){
+	    var link = document.getElementById("random_link");
+	    url = urls[Math.floor (Math.random() * urls.length)];
+	    link.href = url.page;
+	    link.innerHTML = url.title;
+	}
+
+	$( document ).ready( function() {
+		$( "#refresh" ).on( "click", function( e ) {
+	        var $icon = $( this ).find( ".refresh-icon" );
+	            animateClass = "refresh-icon-animate";
+
+	        $icon.addClass( animateClass );
+	        window.setTimeout( function() {
+	        	$icon.removeClass( animateClass );
+	        }, 800 );
+	    });    
+	});
+</script>
+
+<!-- Load the URLs from each Course-->
+<script type="text/javascript" src="http://schulichnotes.com/skin/urls.js"></script>
+<script type="text/javascript" src="http://schulichnotes.com/cardiology/urls.js"></script>
+<script type="text/javascript" src="http://schulichnotes.com/respirology/urls.js"></script>
+<script type="text/javascript" src="http://schulichnotes.com/genitourinary/urls.js"></script>
+<script type="text/javascript" src="http://schulichnotes.com/gastrointestinal/urls.js"></script>
+
+<div id="home-index">
+	<div class="home-wrapper">
+		<div class="row">
+			<div class="home-left">
+				<div id="side-details">
+					<li class="sideheader">Contribute to the Project</li>
+					<a href="https://docs.google.com/forms/d/1GR2ZTofNRkkpsH24wntZKZRBGc2ekZaH2nQT2xKZaD4/viewform" style="margin-bottom:10px" class="button">Join Here</a>
+					<li class="sideheader">Read a Random Note
+						<a href="" onclick="event.preventDefault(); changeRandomURL();" id="refresh"><img class="refresh-icon" src="images/refresh-icon.svg"></a>
+					</li>
+					<ul>
+						<li class="sidelink"><a id="random_link" href=""></a></li>
+						<script type="text/javascript">changeRandomURL();</script>
+					</ul>
+				</div>
+			</div>
+			<div class="home-right">
+				<p id="about">Schulich Notes is an <b>online reference</b> containing course notes written by medical students at the <a href="http://www.schulich.uwo.ca/">Schulich School of Medicine &amp; Dentistry</a>. We aim to make a resource that will facilitate studying, review, and exam preparation. Originally written and developed by <a href="http://kevan.lu">Kevan Lu</a>, the site has now expanded to include contributions from any Schulich medical student.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="home-divider">
+	<div class="home-wrapper">
+		<div class="row">
+			<div class="home-left"><div class="home-reference-number"><i class="fa fa-heart"></i></div></div>
+			<div class="home-right">
+				<div class="home-reference-title">Contributors</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="home-wrapper">
 	<div class="home-offset">
 		<div class="reference contributors">
@@ -98,9 +161,9 @@
 						<img class="author_pic" src="images/people/kevanlu.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#kevanlu">Kevan Lu</a></li>
+						<li class="contributor_link"><a href="#kevanlu">Kevan Lu</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -110,9 +173,9 @@
 						<img class="author_pic" src="images/people/tehminaahmad.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#tehminaahmad">Tehmina Ahmad</a></li>
+						<li class="contributor_link"><a href="#tehminaahmad">Tehmina Ahmad</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -122,9 +185,9 @@
 						<img class="author_pic" src="images/people/jeremychitpin.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#jeremychitpin">Jeremy Chitpin</a></li>
+						<li class="contributor_link"><a href="#jeremychitpin">Jeremy Chitpin</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -134,9 +197,9 @@
 						<img class="author_pic" src="images/people/omerdost.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#omerdost">Omer Dost</a></li>
+						<li class="contributor_link"><a href="#omerdost">Omer Dost</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -146,9 +209,9 @@
 						<img class="author_pic" src="images/people/sularaguruge.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#sularaguruge">Sulara Guruge</a></li>
+						<li class="contributor_link"><a href="#sularaguruge">Sulara Guruge</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -158,9 +221,9 @@
 						<img class="author_pic" src="images/people/keeganguidolin.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#keeganguidolin">Keegan Guidolin</a></li>
+						<li class="contributor_link"><a href="#keeganguidolin">Keegan Guidolin</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -170,9 +233,9 @@
 						<img class="author_pic" src="images/people/billhuang.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#billhuang">Bill Huang</a></li>
+						<li class="contributor_link"><a href="#billhuang">Bill Huang</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -182,9 +245,9 @@
 						<img class="author_pic" src="images/people/jamesjae.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#jamesjae">James Jae</a></li>
+						<li class="contributor_link"><a href="#jamesjae">James Jae</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -194,9 +257,9 @@
 						<img class="author_pic" src="images/people/jplarkin.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#jplarkin">John Paul Larkin</a></li>
+						<li class="contributor_link"><a href="#jplarkin">John Paul Larkin</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -206,9 +269,9 @@
 						<img class="author_pic" src="images/people/vincele.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#vincele">Vince Le</a></li>
+						<li class="contributor_link"><a href="#vincele">Vince Le</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -218,9 +281,9 @@
 						<img class="author_pic" src="images/people/karimmanji.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#karimmanji">Karim Manji</a></li>
+						<li class="contributor_link"><a href="#karimmanji">Karim Manji</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -230,9 +293,9 @@
 						<img class="author_pic" src="images/people/stephmuise.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#stephmuise">Steph Muise</a></li>
+						<li class="contributor_link"><a href="#stephmuise">Steph Muise</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -242,9 +305,9 @@
 						<img class="author_pic" src="images/people/hanyan.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#hanyan">Han Yan</a></li>
+						<li class="contributor_link"><a href="#hanyan">Han Yan</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -254,9 +317,9 @@
 						<img class="author_pic" src="images/people/junsunnyyin.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#junsunnyyin">Jun Sunny Yin</a></li>
+						<li class="contributor_link"><a href="#junsunnyyin">Jun Sunny Yin</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
@@ -266,9 +329,9 @@
 						<img class="author_pic" src="images/people/peijunzhao.jpg">
 					</div>
 					<div class="contributor_desc">
-						<li class="contributor_link"><a href="https://dl.dropboxusercontent.com/u/157117/notes-reference/jekyll/_site/contributors.html#peijunzhao">Pei Jun Zhao</a></li>
+						<li class="contributor_link"><a href="#peijunzhao">Pei Jun Zhao</a></li>
 						<ul>
-							<li>Insert Description here.</li>
+							<li class="contributor_line">Insert Description here.</li>
 							<li><code class="grad_year">Meds 2017</code></li>
 						</ul>
 					</div>
