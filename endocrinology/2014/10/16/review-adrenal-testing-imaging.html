@@ -22,6 +22,8 @@
 	});
 	</script>
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="https://dl.dropboxusercontent.com/u/157117/notes/resources/libraries/raphael-min.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/157117/notes/resources/libraries/flowchart-latest.js"></script>
 	<meta charset="utf-8">
 	<title>Endocrine &amp; Metabolism</title>
 	<meta name="description" content="Course Notes for Endocrine &amp; Metabolism">
@@ -147,10 +149,313 @@
                 <!-- Post Layout -->
                 <div class="title"><h1>Review of Adrenal Testing &amp; Imaging</h1></div>
                 <info datetime="2014-10-16">
-                    <span class="author"><a href="http://www.schulichnotes.com/about.html#sularaguruge">Sulara Guruge</a></span>
+                    <span class="author"><a href="http://www.schulichnotes.com/about.html#kevanlu">Kevan Lu</a></span>
                     <span class="date">Thursday, October 16, 2014</span>
                 </info>
-                <div class="body">
+                <div class="body"><h1 id="adrenal-testing">Adrenal Testing</h1>
+<hr />
+
+<ul>
+  <li>Most testing is done nowadays with <strong>immunoassays</strong>, which have replaced older and more cumbersome tests.</li>
+  <li>These tests are still sometimes used, but <em>don’t order them.</em> For historical interest, these methods include liquid chromatography, mass spectrometry, or colorimetric assays for specific steroids.</li>
+</ul>
+
+<h2 id="adrenal-cortex-tests"><strong>Adrenal Cortex Tests</strong></h2>
+<ul>
+  <li><em>*Adrenal Glucocorticoids</em> → from the zona fasciculata.
+    <ul>
+      <li><em>Baseline Tests</em>.</li>
+      <li><em>Dynamic Tests</em>.</li>
+    </ul>
+  </li>
+  <li><strong>Adrenal Mineralicorticoids</strong> → from the zona glomerulosa.
+    <ul>
+      <li><em>Baseline Tests</em>.</li>
+      <li><em>Dynamic Tests</em>.</li>
+    </ul>
+  </li>
+  <li><strong>Adrenal Androgens</strong> → from the zona reticularis.</li>
+  <li>An easy way to remember which hormones are released from where is to remember the <em>GFR (Glomerulosa, Fasciculata, Reticularis)</em> corresponds to <em>salt, sugar, and sex</em>.</li>
+  <li><em>Baseline</em> → we’re not doing anything to the patient when we’re performing the test.</li>
+  <li><em>Dynamic</em> → we are doing something (eg. giving them a hormone), and are monitoring their response.</li>
+</ul>
+
+<h1 id="adrenal-glucocorticoids">Adrenal Glucocorticoids</h1>
+<hr />
+
+<h2 id="baseline-tests"><strong>Baseline Tests</strong></h2>
+<ol>
+  <li><strong>AM Serum Cortisol.</strong>
+    <ul>
+      <li><em>Used for Adrenal Insufficiency</em>.</li>
+      <li>Measured at 8 or 9 AM.</li>
+      <li>Recall that this was because Cortisol is normally high in the morning, so a AM cortisol would be more sensitive for low values.
+        <ul>
+          <li>&lt;100 → likely AI.</li>
+          <li>&gt;500 → unlikely AI, unless their CBG↑ (OCP, pregnancy).</li>
+          <li>In-between, it’s a <em>gray-zone</em>, where you would then try dynamic testing.</li>
+        </ul>
+      </li>
+      <li>Recall that this is a <em>total cortisol measurement</em>, including <i>bound cortisol</i> (typically bound to CBG), and <i>free cortisol</i>.
+        <ul>
+          <li>Only the free cortisol is biologically active, but we don’t have a serum assay for it.</li>
+          <li>Also, CBG can be elevated with <em>birth control</em> or with <em>pregnancy</em>, so you may have an elevated total cortisol with a normal free cortisol, resulting in a false increase.</li>
+          <li><em>As a result, this test is not effective for looking for cortisol overproduction</em> → which is why it’s only used for Adrenal Insufficiency.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>24 Hour Urine for Free Cortisol</strong>.
+    <ul>
+      <li><em>Used for Adrenal Overproduction</em> (Cushing’s Syndrome).
+        <ul>
+          <li>Recall that Cushing’s Syndrome = Glucocorticoid Overproduction, while Cushing’s Disease = Glucocorticoid Overproduction from a Pituitary Cause.</li>
+          <li>This is the <i>best test</i> for high levels of corticosteroids, and is <em>diagnostic if &gt;3x the upper limit of normal.</em></li>
+          <li>This test doesn’t look at the lower limit → so it’s not good for adrenal insufficiency.</li>
+          <li>One negative however is that it’s a pain-in-the-ass for patients.</li>
+        </ul>
+      </li>
+      <li>Measures free cortisol.</li>
+    </ul>
+  </li>
+</ol>
+
+<blockquote>
+  <h4 id="baseline-tests-for-adrenal-glucocorticoids"><strong>Baseline Tests for Adrenal Glucocorticoids</strong></h4>
+  <ul>
+    <li>The <strong>8 AM Serum Cortisol</strong> is the best test for <strong>Adrenal Insufficiency</strong>.</li>
+    <li>The <strong>24 Hour Free Cortisol</strong> is the best test for <strong>Adrenal Overproduction</strong>.</li>
+    <li>The <em>11 PM Salivary Cortisol</em> is also useful with Adrenal Overproduction, to look for loss of diurnal rhythm, but it isn’t widely available in Canada (at the moment).</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li><strong>What about 11 PM Salivary Cortisol?</strong>
+    <ul>
+      <li><em>Currently not freely available in Canada.</em></li>
+      <li>Recall that this was used in suspect Adrenal Overproduction, to look for loss of diurnal rhythm in cortisol excretion (normally it should be low at night).</li>
+      <li>This is lost in pathological conditions.</li>
+      <li><em>Why not evening serum cortisol?</em> It’s not very practical, since labs are closed at night. Also, salivary free cortisol isn’t affected by OCP/pregnancy.</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <h4 id="remember"><strong>Remember</strong></h4>
+  <ul>
+    <li><em>Serum Cortisol</em> → <em>Total Cortisol</em> (= Free + Bound).</li>
+    <li><em>24 Hour Urine</em> → <em>Free Cortisol.</em></li>
+    <li><em>Salivary Cortisol</em> → <em>Free Cortisol.</em></li>
+    <li><em>Bound cortisol will increase in OCP and Pregnancy</em>, due to an increase in Corticosteroid Binding Globulin (CBG). This may result in <i>falsely high values</i>.</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li><strong>What about the ACTH Level?</strong>
+    <ul>
+      <li>The ACTH is useful in <em>diagnosing primary adrenal insufficiency</em> → ACTH would be high.</li>
+      <li>It’s also useful in <em>determining the cause of Cushing’s Syndrome</em> → whether it’s ACTH dependent (↑ pituitary production) or ACTH independent (loss of regulation).</li>
+      <li><em>Note</em> → ACTH is very labile, so if it’s improperly collected, it may be degraded, and will thus be falsely low. So if the clinical syndrome doesn’t fit with the ACTH, verify if it was properly collected.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="dynamic-tests"><strong>Dynamic Tests</strong></h2>
+<ul>
+  <li>If <em>hyposecretion</em> (insufficiency) is suspected, then you would want see if production can still be <em>stimulated</em>.
+    <ul>
+      <li>Done with the <strong>250 µg ACTH (cosyntropin) Stimulation Test</strong> → uses an ACTH analogue to stimulate the adrenals.
+        <ul>
+          <li>IV or IM bolus → serum cortisol increases &gt;500 (minimum 250 increase).</li>
+          <li>Doesn’t help you determine if it’s a primary or secondary adrenal insufficiency; it only helps you make a diagnosis if the 8 AM serum cortisol was in that gray area (100-500).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>If <em>hypersecretion</em> (overproduction) is suspected, then you would want see if production can still be <em>suppressed</em>.
+    <ul>
+      <li>Done with the <strong>1 mg Dexamethasone Suppression Test</strong> → uses a corticosteroid to try and suppress ACTH production.
+        <ul>
+          <li>Given at 11 PM, measured the next morning at 8 AM.</li>
+          <li>Cortisol levels the next morning should normally be &lt; 50 nM/L.</li>
+          <li>If it’s &gt; 50 nM/L, then they have an abnormal response → Cushing’s Syndrome.</li>
+          <li>Since we’re measuring serum cortisol with this, it can be confounded by:
+            <ol>
+              <li><strong>↑ CBG (OCP, Pregnancy).</strong> → if they’re on birth control or pregnancy, do the 24 hour urine free cortisol.</li>
+              <li><em>↑ Dexamethasone metabolism</em> → if it’s metabolized quickly, it won’t be able to suppress the HPA axis.</li>
+              <li><em>Lack of compliance</em> → the patient has to take the pill!</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+      <li>If either the <em>24 hour urine free cortisol</em> or the <em>1 mg dexamethasone suppression test</em> are abnormal, then the next test is a <strong>high dose dexamethasone suppression test (8 mg)</strong>.
+        <ul>
+          <li>The purpose of the high dose one is to help determine the <em>etiology</em> of the Cushing’s Syndrome.</li>
+          <li>If you have Cushing’s Disease, you should suppress → the pituitary still has feedback, it’s just set at a higher level.</li>
+          <li>If it’s not Cushing’s Disease, then you won’t have suppression on high dose dexamethasone.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <h4 id="dynamic-testing-for-adrenal-glucocorticoids"><strong>Dynamic Testing For Adrenal Glucocorticoids</strong></h4>
+  <ul>
+    <li><strong>Hyposecretion</strong> → <em>stimulation</em> (250 µg ACTH Stimulation Test).</li>
+    <li><strong>Hypersecretion</strong> → <em>suppression</em> (1 mg Dexamethasone Suppression Test).</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <h4 id="adrenal-insufficiency-diagnostic-algorithm"><strong>Adrenal Insufficiency Diagnostic Algorithm</strong></h4>
+  <p><img src="https://dl.dropboxusercontent.com/u/157117/Class%20References/Adrenal%20Insufficiency.svg" /></p>
+</blockquote>
+
+<blockquote>
+  <h4 id="adrenal-overproduction-diagnostic-algorithm"><strong>Adrenal Overproduction Diagnostic Algorithm</strong></h4>
+  <p><img src="https://dl.dropboxusercontent.com/u/157117/Class%20References/Adrenal%20Overproduction.svg" /></p>
+</blockquote>
+
+<ul>
+  <li><strong>Practice Questions</strong></li>
+  <li>Scroll to the bottom to see the answers.
+    <ol>
+      <li><em>8 AM Serum Cortisol of 512</em>
+        <ul>
+          <li>Is this Normal? Adrenal Insufficiency? Cushings?</li>
+        </ul>
+      </li>
+      <li><em>8 AM Serum Cortisol of 45</em>
+        <ul>
+          <li>Is this Normal? Adrenal Insufficiency? Cushings?</li>
+        </ul>
+      </li>
+      <li><em>1 mg Dexamethasone Suppression Test → Serum Cortisol of 213</em>
+        <ul>
+          <li>Is this Normal? Adrenal Insufficiency? Cushings?</li>
+        </ul>
+      </li>
+      <li><em>1 mg Dexamethasone Suppression Test → Serum Cortisol of 45</em>
+        <ul>
+          <li>Is this Normal? Adrenal Insufficiency? Cushings?</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h1 id="adrenal-mineralicorticoids">Adrenal Mineralicorticoids</h1>
+<hr />
+
+<ul>
+  <li>Very weakly affected by the HPA axis, through cross-reactivity of cortisol to the mineralicorticoid receptor.</li>
+  <li><em>Primarily regulated by the RAAS System</em>, which we’ve seen a million times.</li>
+</ul>
+
+<p><img src="https://dl.dropboxusercontent.com/spa/4sm4d57annqq50o/o70n4j4o.png" /></p>
+
+<h4 id="hypoaldosteronism"><strong>Hypoaldosteronism</strong></h4>
+<ul>
+  <li>With <em>primary adrenal insufficiency</em> (eg. with Addison’s Disease), you have Aldosterone <span style="color:red">↓</span>, Na<sup>+</sup> <span style="color:red">↓</span>, and K<sup>+</sup> <span style="color:green">↑</span>.</li>
+  <li>Because you lose Na<sup>+</sup>, and water follows the salt, you end up hypotensive.</li>
+  <li>Hence we end up with:
+    <ol>
+      <li><em>Hyponatremia</em>.</li>
+      <li><em>Hyperkalemia</em>.</li>
+      <li><em>Hypotension</em>.</li>
+    </ol>
+  </li>
+  <li><strong>Tests are usually not necessary for hypoaldosteronism</strong> → can usually be seen from the clinical picture.
+    <ul>
+      <li>Also, if it’s a primary adrenal problem, then it’ll affect the glucocorticoids too, so you can use the diagnostic algorithm for adrenal insufficiency shown previously.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="hyperaldosteronism"><strong>Hyperaldosteronism</strong></h4>
+<ul>
+  <li><strong>We do perform tests for hyperaldosteronism</strong>.</li>
+  <li><em>Why do we need to do tests?</em></li>
+  <li>It’ll help direct medical/surgical/radiological treatment for:
+    <ol>
+      <li><em>Primary hyperaldosteronism.</em>
+        <ul>
+          <li>Also known as <em>Conn’s Syndrome.</em></li>
+          <li>Feedback is intact, so Renin is low.
+ <span class="sidenote">We saw this in GU with the <b>principal cell</b> and the <b>α-intercalated cell</b>. Review <a href="http://www.schulichnotes.com/genitourinary/2014/04/09/reabsorption-secretion-trip-down-tubule.html">Reabsorption &amp; Secretion</a> from GU.</span></li>
+          <li>However, since aldosterone is high, we have ↑ Na<sup>+</sup> retention, ↑ K<sup>+</sup> secretion, and ↑ H<sup>+</sup> secretion. resulting in hypernatremia, hypokalemia, and metabolic alkalosis.</li>
+        </ul>
+      </li>
+      <li><em>Primary renal artery stenosis (secondary hyperaldosteronism)</em></li>
+      <li><em>Primary hypertension.</em></li>
+    </ol>
+  </li>
+</ul>
+
+<h1 id="adrenal-androgens">Adrenal Androgens</h1>
+<hr />
+
+<h2 id="baseline-tests-1"><strong>Baseline Tests</strong></h2>
+<ul>
+  <li>Not too exciting.</li>
+  <li><em>Only really tested in women with virilization.</em>
+    <ul>
+      <li>This is because most of the testosterone in women is from the peripheral conversion of androgens.</li>
+    </ul>
+  </li>
+  <li>These tests include:
+    <ol>
+      <li><strong>Serum Dehydroepiandrosterone Sulphate (DHEAS)</strong>
+        <ul>
+          <li>Specific for virilizing tumours → most virilizing tumours add a sulphate onto the DHEA.</li>
+        </ul>
+      </li>
+      <li><strong>Serum Androstenedione</strong></li>
+    </ol>
+  </li>
+  <li>Both are baseline tests, although they can also be used as dynamic tests by measuring them in serum after suppression with dexamethasone.
+    <ul>
+      <li>Dynamic tests with these are extremely rarely done.</li>
+    </ul>
+  </li>
+  <li>There are also indirect tests:
+    <ol>
+      <li><strong>Serum Testosterone</strong>
+        <ul>
+          <li><em>Not directly secreted by the adrenal</em>, but adrenal androgens can be converted to testosterone.</li>
+          <li>Total = free + bound to <em>sex-hormone binding globulin</em>.</li>
+        </ul>
+      </li>
+      <li><strong>24 hour urine for 17-Ketosteroids</strong>
+        <ul>
+          <li>Extremely old test; not used anymore.</li>
+          <li>Indirect colorimetric method for measuring adrenal androgens.</li>
+          <li><em>Don’t order this</em>.</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<blockquote>
+  <h4 id="baseline-tests-for-adrenal-androgens"><strong>Baseline Tests for Adrenal Androgens</strong></h4>
+  <ol>
+    <li><strong>Serum Dehydroepiandrosterone Sulphate (DHEAS)</strong></li>
+    <li><strong>Serum Androstenedione</strong></li>
+    <li><strong>Serum Testosterone</strong> → indirect, adrenal androgens are converted to testosterone.</li>
+  </ol>
+</blockquote>
+
+<hr />
+
+<h3 id="answers">Answers</h3>
+<ol>
+  <li>An <em>8 AM Serum Cortisol of 512</em> is <em>normal</em>. Anything &lt; 100 is Adrenal Insufficiency; anything &gt; 500 is normal; anything from 100 to 500 is in a gray area and requires a subsequent ACTH stimulation test.</li>
+  <li>An <em>8 AM Serum Cortisol of 45</em> is <em>adrenal insufficiency</em>. Anything &lt; 100 is Adrenal Insufficiency; anything &gt; 500 is normal; anything from 100 to 500 is in a gray area and requires a subsequent ACTH stimulation test.</li>
+  <li>This is <em>Cushing’s Syndrome</em>. Anything &gt; 50 nM/L is positive for Cushing’s; anything &lt; 50 is normal.</li>
+  <li>This is <em>normal</em>. Anything &gt; 50 nM/L is positive for Cushing’s; anything &lt; 50 is normal.</li>
+</ol>
                 
                 </div>
             </div>
