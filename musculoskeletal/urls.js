@@ -1,3 +1,3 @@
-var new_urls = [{title:"", page:""}];
+var new_urls = [{title:"Approach to the Spine", page:"http://www.schulichnotes.com/musculoskeletal/2015/01/19/approach-spine.html"}, {title:"Concepts in Musculoskeletal Medicine", page:"http://www.schulichnotes.com/musculoskeletal/2015/01/19/concepts-musculoskeletal-medicine.html"}, {title:"Introduction to the Musculoskeletal System", page:"http://www.schulichnotes.com/musculoskeletal/2015/01/19/intro-msk.html"}, {title:"", page:""}];
 new_urls.pop();
 urls = urls.concat(new_urls);
