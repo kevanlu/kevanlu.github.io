@@ -1,0 +1,3 @@
+var new_urls = [{title:"Child Health Small Groups &ndash; Pediatric Resuscitation", page:"http://www.schulichnotes.com/emergency/2015/03/03/child-health-small-groups-pediatric-resuscitation.html"}, {title:"Principles of Pediatric Resuscitation", page:"http://www.schulichnotes.com/emergency/2015/03/03/principles-pediatric-resuscitation.html"}, {title:"Shock", page:"http://www.schulichnotes.com/emergency/2015/03/03/shock.html"}, {title:"", page:""}];
+new_urls.pop();
+urls = urls.concat(new_urls);
