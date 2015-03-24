@@ -1,3 +1,3 @@
-var new_urls = [{title:"", page:""}];
+var new_urls = [{title:"Basal Ganglia &amp; Diencephalon", page:"http://www.schulichnotes.com/neurology/2015/03/17/basal-ganglia-diencephalon.html"}, {title:"Anatomy of the Cranial Cavity II", page:"http://www.schulichnotes.com/neurology/2015/03/17/anatomy-cranial-cavity-2.html"}, {title:"Anatomy of the Cranial Cavity I", page:"http://www.schulichnotes.com/neurology/2015/03/17/anatomy-cranial-cavity-1.html"}, {title:"Anatomy of the Cerebrum", page:"http://www.schulichnotes.com/neurology/2015/03/16/anatomy-cerebrum.html"}, {title:"Introduction to Neuroanatomy", page:"http://www.schulichnotes.com/neurology/2015/03/16/intro-neuroanatomy.html"}, {title:"Introduction to NEE", page:"http://www.schulichnotes.com/neurology/2015/03/16/intro-neuroscience-eye-ear.html"}, {title:"", page:""}];
 new_urls.pop();
 urls = urls.concat(new_urls);
