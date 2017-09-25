@@ -1,0 +1,438 @@
+/* #Content 
+================================================== */
+body {background-color:#FAFAFA;}
+.content-background {
+	position:fixed; 
+	height:100%; 
+	background-color:white;
+	width:700px;
+	padding-left:65px; padding-right:65px;
+	z-index:-1;
+}
+.content {
+	max-width:700px; 
+	padding-left:65px; 
+	padding-right:65px; 
+	background-color:white; 
+}
+.content-offset {
+	position:absolute;
+	width: calc(100% - 300px);
+	margin-left:300px;
+	height:100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* #Sidebar
+================================================== */
+.course-toc{
+	position:fixed;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	width:300px;
+	margin-top:110px;
+	height: calc(100% - 110px);
+}
+.sidebar-background {position:fixed; top:0; left:0; width:300px; height:100%; background-color:#444;}
+.sidebar {position:absolute; top:0px; left:0; width:300px; background-color:#444;}
+.sidebar li {
+	margin-top:-3px;
+	margin-left:0px;
+	margin-bottom:9px;
+	line-height:20px;
+}
+.sidebar li.week{
+	font-family:"Whitney SC", sans-serif; font-weight: bold; font-size:21px;
+	text-transform:lowercase;
+	margin-bottom:15px;
+	color: #EEE;
+	background-color:#333;
+	padding-bottom:5px;
+	padding-left:20px;
+	border-top:1px solid #222;
+	border-bottom:1px solid #222;
+	list-style:none;
+}
+.sidebar li.day{
+	font-family:"Whitney SC", sans-serif; font-weight: bold; font-size:18px;
+	text-transform:lowercase;
+	color: #CCC;
+	padding-left:20px;
+	padding-top:2px;
+	padding-bottom:4px;
+}
+.sidebar li.lecture{
+	margin-left:38px; list-style:decimal; font-size:14px; padding-right:35px;
+	padding-bottom:1px;
+}
+.sidebar ul{margin-left:0px; list-style:none;}
+.sidebar a{font-family:"Source Sans", sans-serif; font-size:16px; border:none; color: #AAA;
+	transition: 150ms ease-out;
+	-webkit-transition: 150ms ease-out;
+	-moz-transition: 150ms ease-out;}
+.sidebar a:hover {color:white;}
+#overlay{
+	display:none; 
+	position:fixed;
+	width:100%;
+	top:38px;
+	z-index:9000;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+#home-overlay{
+	display:none; 
+	position:fixed;
+	width:100%;
+	z-index:9001;
+}
+#home-overlay{
+	height:38px;
+	background-color:#444;
+}
+#home-overlay .index {padding-top:7px;}
+#home-overlay .index a {border-bottom:none;}
+#overlay{
+	padding-top:2px;
+	padding-bottom:6px;
+	background-color:#F9F9F9;
+	height:21px;
+	border-bottom:1px solid #AAA;
+}
+#overlay h1{text-align:center; margin-top:-22px;}
+#overlay a{
+	color:#AAA;
+	font-size:20px;
+	font-family:"Whitney SC";
+	text-transform: lowercase;
+	font-weight:bold;
+}
+#overlay a:hover {color:#888;}
+
+/* Search Bar and Sidebar Header Formatting */
+#header-search-icon {
+	position:fixed;
+	top:0px;
+	right:0px;
+	width:40px;
+	height:38px;
+	text-align:center;
+}
+#header-search-button {
+	position:relative;
+	top:6px;
+	color:#BBB;
+	border-bottom:none;
+	font-size:15px;
+}
+#header-search-button a {border-bottom:none;}
+#header-search-bar {display:none; position:fixed;}
+#header-search-bar {
+	z-index:9001;
+	position:fixed;
+	top:68px;
+	height:40px;
+	width:100%;
+	background-color:#444;
+}
+#header-search-bar .search {display:block;}
+#header-search-bar .search {height:100%;}
+#header-search-bar .search #tipue_search_input {
+	width:100%; margin-left:0px; height:26px;
+	background-color:white;
+	border:none;
+	border-bottom:1px solid #BBB;
+	padding-left:15px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+.search-wrapper {
+	position:fixed;
+	width:300px;
+	z-index:999;
+	background-color:#333; 
+	padding-bottom:11px; padding-top:27px;
+	border-bottom:2px solid #222;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.index {text-align:center; padding-bottom:5px;}
+.index a {font-family:"Charter"; color:white; font-size:20px;}
+.index a:hover {border:none;}
+.course-index {padding-left:20px; padding-bottom:10px; padding-top:5px;}
+.course-index a {
+	font-family:"Whitney SC"; text-transform:lowercase;
+	font-weight:bold;
+	font-size:20px;
+	color:#CCC;
+}
+.course-index a:hover{border-bottom:1px solid #D62828;}
+.search #tipue_search_input {width:212px; margin-left:20px;
+	height:15px;
+	border:1px solid #222;
+	border-right:none;
+}
+.search #tipue_search_button {
+	height:31px;
+	border:1px solid #222;
+	border-left:none;
+}
+
+/* #Table of Contents
+================================================== */
+.index-header{
+	max-width:700px;
+	padding-left:65px;
+	padding-right:65px;
+	height:40px;
+	background-color:#E8E8F1;
+}
+#course-title, #course-year, #personal-name, #toc-title, #course-art {text-align:center;}
+#course-title {
+	padding-top:65px; padding-bottom:0px;
+	padding-left:20px; padding-right:20px;
+	max-width:550px;
+	margin:0 auto;
+}
+#course-title h1 {font-size:48px; line-height:54px; margin-bottom:10px;}
+#personal-name h2 a{
+	font-size:22px;
+	text-transform:lowercase;
+	font-weight:normal;
+	color:#888;
+	display:none;
+}
+#course-year h2{
+	margin-top:-5px;
+	color:#CCC; font-size:22px; margin-bottom:0px; padding-bottom:0px;
+	font-weight:normal;
+	text-transform:none;
+	font-family:"Source Sans", Arial, sans-serif;
+	line-height:28px;
+}
+#toc-title h2{margin-top:30px; font-size:34px; color:#333; margin-bottom:15px;}
+#author {
+	font-family:"Source Sans", sans-serif; font-size:18px; color: #777;
+	list-style-type: none;
+	margin-left:0px;
+	margin-top:-5px;
+	padding-bottom:8px;
+}
+
+.cover-art{opacity:0.8; padding-top:25px; padding-bottom:20px; height:420px; width:auto;}
+.toc {padding-bottom:20px;}
+.toc h5{margin-bottom:20px;}
+.toc .columns{margin:0;}
+.toc li {
+	margin-top:-3px;
+	margin-left:0px;
+	line-height:20px;}
+.toc h5.week-desc {
+	font-size:20px; 
+	margin-bottom:10px; 
+	line-height:25px;
+	padding-right:40px;
+}
+.toc li.week{
+	font-family:"Whitney SC", sans-serif; font-weight: bold; font-size:24px;
+	text-transform:lowercase;
+	color: #333;
+	list-style:none;
+	padding-top:15px;
+	margin-bottom:15px;
+	border-top:1px solid #999;
+}
+.toc li.day{
+	padding-bottom:3px; padding-top:8px;
+	font-family:"Whitney SC", sans-serif; font-weight: bold; font-size:20px;
+	text-transform:lowercase;
+	color: #555;}
+.toc li.lecture{
+		margin-left:20px; 
+		list-style:decimal; 
+		font-size:15px; 
+		margin-bottom:0px; padding-bottom:5px;
+	}
+.toc ul{margin-left:0px; list-style:none; padding-right:30px;}
+.toc a{font-family:"Source Sans", sans-serif; font-size:18px; border:none; color: #888;
+	line-height:140%;
+	transition: 300ms ease-out;
+	-webkit-transition: 300ms ease-out;
+	-moz-transition: 300ms ease-out;}
+.toc a:hover {color:#333;}
+.row {margin-bottom:40px;}
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after { clear: both; }
+
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6
+{margin-bottom:15px;}
+.post h1 {margin-bottom:5px;}
+.post h2 {margin-bottom:20px; margin-top:5px;}
+
+.right {float:right; width:33%; padding-left:15px;}
+.med-right {float:right; width:45%; padding-left:15px;}
+.large-right {float:right; width:60%; padding-left:15px;}
+.title {padding:66px 10px 2px 0px; border-bottom:2px solid #777; margin-bottom:10px;}
+.title h1{padding:0; margin-bottom:5px; font-size:32px; margin-top:0px;}
+.date {margin-bottom:5px; padding-left:0px; margin-top:10px; font-size:18px; color:#AAA;}
+.author a {
+	margin-right: 5px;
+	font-family:"Source Sans", Helvetica, Arial, sans-serif;
+	font-size:18px;
+	color:#777;
+	padding: 1px 4px 1px 5px; background-color:#fafafa;
+	border-radius:4px;
+	border: 1px solid #CCC;
+	transition: 200ms ease-out;
+	-webkit-transition: 200ms ease-out;
+	-moz-transition: 200ms ease-out;
+}
+.author a:hover {background-color:#E9E9E9; border:1px solid #AAA; color:#555;}
+.body {padding:20px 10px 10px 10px;}
+.sidenote {
+	position:absolute; top:auto; left:860px; padding:0;
+	margin-top:0px;
+	font-family:"Source Sans", Helvetica, Arial, sans-serif;
+	font-size:14px; line-height:20px; color:#999;
+	width:150px;
+}
+code {margin:0; padding:0; margin-top:-5px;
+	padding-bottom:10px; padding-left:0px;
+	font-size:15px; font-family:"Source Sans", Helvetica, Arial, sans-serif; color:#999;
+	line-height:18px;
+}
+
+.video {width:100%; height:350px; padding-top:10px; padding-bottom:20px;}
+.row-header {font-size:18px; font-weight:bold; text-align:right; 
+	font-family:"Whitney SC", "Source Sans", Helvetica, Arial, sans-serif; text-transform:lowercase;}
+.col-header {font-size:18px; font-weight:bold; 
+	font-family:"Whitney SC", "Source Sans", Helvetica, Arial, sans-serif; text-transform:lowercase; padding-bottom:7px;}
+
+.pagination {margin-top:5px; padding-top:20px; border-top:4px solid #EAEAEA;}
+.pagination a {
+	font-family:"Whitney SC", "Source Sans", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size:19px;
+	text-transform: lowercase;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 150ms;
+	color: #555;
+	opacity: .6;
+	line-height: 1;
+	border:none;
+}
+.pagination a:hover {
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 150ms;
+	opacity: 1;
+}
+.pagination .newer {float:left; padding-right:10px; padding-bottom:25px;}
+.pagination .older {float: right; padding-left:10px; padding-bottom:25px;}
+.fa-angle-left, .fa-angle-right {position:relative; top:1px;}
+.fa-angle-right {padding-left:5px;}
+.fa-angle-left {padding-right:5px;}
+
+@media only screen and (max-width: 1340px) {.sidenote{display:none}}
+
+/* iPad portrait browsing*/
+@media only screen and (min-width:768px) and (max-width: 959px) {
+	body {background-color:white;}
+	.content {margin:0 auto; padding-left:40px; padding-right:40px;}
+	.course-toc, .search-wrapper, .sidebar, .sidebar-background {width:230px;}
+	.cover-art{height:350px;}
+	.content-offset {
+		margin-left:230px;
+		width: calc(100% - 230px);
+	}
+	.search #tipue_search_input {width:142px; font-size:13px;}
+
+	.title h1{padding:0; margin-bottom:5px; font-size:28px; margin-top:0px;}
+	.date {font-size:16px;}
+
+	.toc li.week{font-size:22px;}
+	.toc h5.week-desc{font-size:20px;}
+	.toc li.day{font-size:18px;}
+	.toc li.lecture{font-size:14px; }
+	.toc a{font-size:16px;}
+	.toc ul {padding-right:10px;}
+	.video {width:100%; height:320px;}
+
+	#author {font-size:16px;}
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	body {background-color:white;}
+	.sidebar{display:none;}
+	.sidebar-background{display:none;}
+	.content-offset {
+		position:static;
+		width:100%;
+		margin-left:0px;
+	}
+
+	.index-header{display:none;}
+	.title {padding-top:85px;}
+	.title h1{padding:0; margin-bottom:5px; font-size:26px; margin-top:0px;}
+	.date {font-size:16px;}
+	code {font-size:14px;}
+	.pagination a {font-size:16px; color:#888;}
+	.row {margin-bottom:0px;}
+	.video {width:100%; height:280px;}
+
+	/*Title page formatting*/
+	#course-title {padding-top:90px;}
+	#course-title h1{font-size:44px; line-height:48px;}
+	#personal-name h2{font-size:18px;}
+	#course-year h2{font-size:18px;}
+	#toc-title h2{font-size:28px;}
+	.toc {padding-bottom:0px;}
+	#author {margin-left:5px; margin-top:-8px; font-size:16px;}
+	.cover-art{width:65%; height:auto; display:block; margin: 0 auto; padding-bottom:15px;}
+
+	.search{display:none;}
+	.navigation {display: none;}
+	.sidebar a:hover {padding-left: 0px;}
+	#overlay, #home-overlay {display:block;}
+	#header-search-bar.search-bar-open {display:block}
+	.tipue_search_content_title {font-size:22px !important;}
+	.tipue_search_content_text {font-size:14px !important; line-height:1.2em;}
+}
+
+/* Mobile Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.cover-art{width:45%; height:auto; display:block; margin: 0 auto;}
+}
+
+/* Mobile Portrait */
+@media only screen and (max-width: 480px) {
+	#course-title h1{font-size:38px; line-height:40px;}
+	#toc-title h2 {margin-top:20px;}
+	.content {padding-left:20px; padding-right:20px;}
+	.right, .large-right, .med-right{display:block; float:none; width:80%; height:auto; margin:auto; padding-top:10px; padding-bottom:10px;}
+	.title h1{font-size:22px; line-height:1.3em;}
+	.date {font-size:14px;}
+	.author a {
+		font-size:14px;
+		margin-right:2px;
+	}
+
+	th {border-bottom:1px solid #888; padding: 0px 5px 10px 5px;
+	font-size:18px;
+	}
+	tr {padding:6px 2px 6px 2px;}
+	td {padding:6px 7px 7px 7px; line-height:17px;}
+
+	.toc li.week{padding-left:10px; font-size:22px !important; margin-bottom:5px;}
+	.toc h5.week-desc{padding-left:10px; font-size:20px !important;}
+	.toc li.day{padding-left:10px; font-size:18px !important; padding-bottom:0; padding-top:2px; margin-bottom:0;}
+	.toc li.lecture{margin-left:30px; font-size:14px !important; padding-bottom:3px;}
+	.toc ul {margin-top:5px;}
+	.toc a{font-size:16px !important;}
+}

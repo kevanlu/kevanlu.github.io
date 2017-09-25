@@ -1,0 +1,212 @@
+@font-face {
+	font-family: "Charter";
+	font-weight: bold;
+	src: url("/resources/fonts/Charter.otf") format("opentype");
+}
+@font-face {
+	font-family: "Whitney SC";
+	src: url("/resources/fonts/WhitneyHTF-BookSC.otf") format("opentype");
+}
+@font-face {
+	font-family: "Whitney SC";
+	font-weight: bold;
+	src: url("/resources/fonts/WhitneyHTF-MediumSC.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Sans";
+	src: url("/resources/fonts/SourceSansPro-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Sans";
+	font-weight: bold;
+	src: url("/resources/fonts/SourceSansPro-Semibold.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Sans";
+	font-style:italic;
+	src: url("/resources/fonts/SourceSansPro-It.otf") format("opentype");
+}
+.file-title-navbar {font-size:18px !important; padding-top:5px !important;}
+.title-container li {margin-left:0px !important;}
+.btn img {margin-top:4px !important; margin-left:10px !important; height:80% !important; width:auto !important;}
+.preview-container {background-color:white !important;}
+.navbar {border-bottom: 1px solid #999 !important;}
+.navbar li {margin-left:0px;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	word-wrap:break-word;
+	text-align:left !important;
+	vertical-align: baseline; }
+body {
+	line-height: 1; }
+ol, ul {
+	list-style: none; }
+blockquote, q {
+	quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none; }
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+.preview-contents p, .preview-contents li, .preview-contents ul, .preview-contents blockquote{
+
+}
+
+h1{
+	color: #444;
+	font-family: "Charter", "Georgia", "Times New Roman", serif;
+	font-weight: normal; 
+} 
+h2, h3, h4, h5, h6 {
+	color: #444;
+	font-family: "Whitney SC", "Source Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold; text-transform:lowercase;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit;}
+h1 { font-size: 30px; line-height: 36px; margin-bottom: 10px; margin-top:15px;}
+h2 { font-size: 27px; line-height: 32px; margin-bottom: 10px; }
+h3 { font-size: 24px; line-height: 28px; margin-bottom: 5px; }
+h4 { font-size: 23px; line-height: 27px; }
+h5 { font-size: 21px; line-height: 20px; }
+h6 { font-size: 19px; line-height: 19px; }
+
+p { margin: 0 0 20px 0; font-size:16px;
+	line-height: 160%;}
+p img { margin: 0; }
+p, li, ul {	color: #555; }
+#preview-contents {	font: 16px "Helvetica", "Arial", sans-serif !important;}
+
+em { font-weight: bold; color:#444; font-style:normal; }
+strong { font-weight: bold; color: #444; border-bottom:1px solid #D62828; padding-bottom:1px;}
+b {font-weight:bold; }
+small { font-size: 80%; }
+abbr {border-bottom:1px solid #AAA;}
+
+/*	Blockquotes  */
+blockquote, blockquote p { font: 16px "Helvetica", "Arial", sans-serif; line-height:150%;}
+blockquote { margin: 15px 15px 25px 15px; padding: 13px 20px 13px 20px; border: 1px solid #CCC; background:#FAFAFA;}
+blockquote cite { display: block; font-size: 12px; color: #666; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #666; }
+hr { border: solid #999; border-width: 1px 0 0; clear: both; margin: 0px 0 20px; height: 0; }
+
+h1, h2, h3, h4, h5, h6{margin-bottom:15px;} 
+h1 {margin-bottom:5px;} 
+h2 {margin-bottom:20px; margin-top:5px;}
+
+ul, ol { margin-bottom: 0px; padding-bottom:10px;}
+ul { list-style: disc outside; margin-left: 20px; font-size:16px;}
+ol { list-style: decimal; color:#666; margin-left:10px; font-size:16px;}
+ol p {font-size:16px;}
+ol, ul.square, ul.circle, ul.disc { margin-left: 25px; }
+ul.square { list-style: square outside; }
+ul.circle { list-style: circle outside; }
+ul.disc { list-style: disc outside; }
+ul ul, ul ol,
+ol ol, ol ul { margin: 10px 0px 0px 25px; color:#666; padding-bottom:1px;}
+ul ul li, ul ol li,
+ol ol li, ol ul li { margin-bottom: 8px; font-size:16px;}
+li { margin-left:25px; line-height: 24px; margin-bottom: 5px; font-size:16px;}
+ul.large li { line-height: 24px; }
+li p { line-height: 24px; font-weight:normal; color:#666; margin-bottom:8px;}
+
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto; }
+img {width:100%; margin-top:15px; margin-bottom:10px;}
+
+.right {float:right; width:40%; padding-left:10px;}
+.body {padding:20px 10px 10px 10px;}
+.side-note {position:absolute; top:auto; right:0; padding:0;
+	margin-top:0px;
+	font-family:"Source Sans", Helvetica, Arial, sans-serif;
+	font-size:14px; line-height:20px; color:#999;
+	display:none;
+}
+code {margin:0; padding:0; margin-top:-5px;
+	padding-bottom:10px; padding-left:0px;
+	font-size:14px !important; 
+	font-family:"Source Sans", Helvetica, Arial, sans-serif; color:#999 !important;
+	line-height:18px;
+	background-color:white !important;
+	white-space: normal !important;
+}
+sub {font-size:12px;}
+sup {font-size:12px; vertical-align:super;}
+
+table{text-align:left; font-family:"Source Sans", Helvetica, Arial, sans-serif; margin-top:15px; margin-bottom:25px;}
+
+.over {text-decoration:overline;}
+i {font-style:italic;}
+audio{padding-bottom:15px; padding-top:10px;}
+th {border-bottom:1px solid #888; padding: 0px 15px 10px 15px;
+	font-family:"Whitney SC", "Source Sans", Helvetica, Arial, sans-serif;
+	text-transform:lowercase;
+	font-size:20px;
+}
+tr {border-bottom:1px solid #CCC; padding:10px 4px 8px 4px;}
+td {text-align:center; padding:6px 15px 7px 15px; line-height:20px;}
+
+
+/* iPad portrait browsing*/
+@media only screen and (min-width:768px) and (max-width: 959px) {
+	.side-note{display:none !important;}
+	.title h1{padding:0; margin-bottom:5px; font-size:26px; margin-top:0px;}
+
+	.date {font-size:16px;}
+	.author a {
+	margin-right: 5px;
+	font-size:16px;
+	}
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	.side-note{display:none !important;}
+	code {font-size:14px;}
+
+	nav { position: relative; margin-top:-137px; margin-left:0px; margin-bottom:-50px; width:auto;}
+	h1 { font-size: 24px; line-height: 32px; margin-bottom: 10px; }
+	h2 { font-size: 22px; line-height: 30px; margin-bottom: 8px; }
+	h3 { font-size: 20px; line-height: 24px; margin-bottom: 3px; }
+	h4 { font-size: 19px; line-height: 22px; margin-bottom: 2px; }
+	h5 { font-size: 18px; line-height: 19px; }
+
+	ul, ol { margin-bottom: 0px; padding-bottom:10px;}
+	ul { list-style: disc outside; margin-left: 20px;}
+	ol { list-style: decimal; color:#666; margin-left:10px; font-size:16px;}
+	ol p {font-size:16px;}
+	ol, ul.square, ul.circle, ul.disc { margin-left: 25px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 10px 0px 0px 10px; color:#666; padding-bottom:1px;}
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 8px; font-size:16px;}
+	li { margin-left:10px; line-height: 24px; margin-bottom: 5px; }
+	ul.large li { line-height: 24px; }
+	li p { line-height: 24px; font-weight:normal; color:#666; margin-bottom:8px;}
+
+	/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 16px; }
+	blockquote {margin: 15px -30px 15px -30px; padding: 15px 30px 0px 30px; border: 1px solid #CCC; background:#F9F9F9;}
+}
+
+/* Mobile Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait */
+@media only screen and (max-width: 480px) {
+	.right{display:block; float:none; width:80%; height:auto; margin:auto; padding-top:10px; padding-bottom:10px;}
+	th {border-bottom:1px solid #888; padding: 0px 5px 10px 5px;
+	font-size:18px;
+	}
+	tr {padding:6px 2px 6px 2px;}
+	td {padding:6px 7px 7px 7px; line-height:17px;}
+}

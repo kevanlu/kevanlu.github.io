@@ -1,0 +1,9 @@
+<!-- Displays a Search Bar-->
+<div class="search-wrapper">
+	<div class="index"><a href="http://www.schulichnotes.com"><i class="fa fa-stethoscope"></i> Schulich Notes</a></div>
+	<form class="search" action="{{ site.course_url }}/search.html">
+	<div style="float: left;"><input type="text" value="Search {{ site.course_name }}" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" name="q" id="tipue_search_input"></div>
+	<div style="float: left;"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div>
+	<div style="clear: left;"></div>
+	</form>
+</div>

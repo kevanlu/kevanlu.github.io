@@ -1,0 +1,244 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+	
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+@font-face {
+	font-family: "Charter";
+	font-weight: bold;
+	src: url("../fonts/Charter.otf") format("opentype");
+}
+@font-face {
+	font-family: "Whitney SC";
+	src: url("../fonts/WhitneyHTF-BookSC.otf") format("opentype");
+}
+@font-face {
+	font-family: "Whitney SC";
+	font-weight: bold;
+	src: url("../fonts/WhitneyHTF-MediumSC.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Sans";
+	src: url("../fonts/SourceSansPro-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Sans";
+	font-weight: bold;
+	src: url("../fonts/SourceSansPro-Semibold.otf") format("opentype");
+}
+@font-face {
+	font-family: "Source Sans";
+	font-style:italic;
+	src: url("../fonts/SourceSansPro-It.otf") format("opentype");
+}
+
+/* #Mobile & Non-mobile elements
+================================================== */
+	.nonmobile{display:block;}
+	.mobile{display:none;}
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		word-wrap:break-word;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+	/* Selection Colours*/
+	::selection {
+		background: #fff7b6;}
+	::-moz-selection {
+		background: #fff7b6;}
+
+/* #Basic Styles
+================================================== */
+	body {
+		font: 16px "Helvetica", "Arial", sans-serif, "Georgia", "Times New Roman", serif;
+		color: #555;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+		line-height: 160%;
+	}
+
+/* #Typography
+================================================== */
+	h1{
+		color: #444;
+		font-family: "Charter", "Georgia", "Times New Roman", serif;
+		font-weight: normal; 
+	} 
+	h2, h3, h4, h5, h6 {
+		color: #444;
+		font-family: "Whitney SC", "Source Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: bold; text-transform:lowercase;
+	}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit;}
+	h1 { font-size: 30px; line-height: 36px; margin-bottom: 10px; margin-top:15px;}
+	h2 { font-size: 27px; line-height: 32px; margin-bottom: 10px; }
+	h3 { font-size: 24px; line-height: 28px; margin-bottom: 15px; }
+	h4 { font-size: 23px; line-height: 27px; }
+	h5 { font-size: 21px; line-height: 20px; }
+	h6 { font-size: 19px; line-height: 19px; }
+
+	p { margin: 0 0 20px 0; }
+	p img { margin: 0; }
+
+	em { font-weight: bold; color:#444; }
+	strong { font-weight: bold; color: #444; border-bottom:1px solid #D62828; padding-bottom:1px;}
+	b {font-weight:bold; }
+	small { font-size: 80%; }
+	abbr {border-bottom:1px solid #AAA;}
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 16px; }
+	blockquote { margin: 15px 15px 25px 15px; padding: 13px 20px 0px 20px; border: 1px solid #CCC; background:#FAFAFA;}
+	blockquote cite { display: block; font-size: 12px; color: #666; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #666; }
+	hr { border: solid #999; border-width: 1px 0 0; clear: both; margin: 0px 0 20px; height: 0; }
+
+	
+.right {float:right; width:40%; padding-left:10px;}
+.title {padding:10px 10px 0px 0px; border-bottom:2px solid #777;}
+.title h1{padding:0; margin-bottom:5px; font-size:32px; margin-top:0px;}
+.date {margin-bottom:5px; padding-left:0px; margin-top:10px; font-size:19px; color:#AAA;}
+.body {padding:20px 10px 10px 10px;}
+.side-note {position:absolute; top:auto; right:0; padding:0;
+	margin-top:0px;
+	font-family:"Source Sans", Helvetica, Arial, sans-serif;
+	font-size:14px; line-height:20px; color:#999;
+}
+code {margin:0; padding:0; margin-top:-5px;
+	padding-bottom:10px; padding-left:0px;
+	font-size:15px; font-family:"Source Sans", Helvetica, Arial, sans-serif; color:#999;
+	line-height:18px;
+}
+sub {font-size:12px;}
+sup {font-size:12px; vertical-align:super;}
+
+
+/* #Links, with fade ins and fade outs.
+================================================== */
+	a, a:visited {
+		color:#555; text-decoration:none; outline: 0;
+		-moz-transition: all 0.2s linear;
+		-webkit-transition: all 0.2s linear;
+		-o-transition: all 0.2s linear;
+		transition: all 0.2s linear;
+		border-bottom:1px solid #DDD;
+	}
+	a:hover, a:focus {
+		color:#555;
+		border-bottom:1px solid #222;
+	}
+	p a, p a:visited { line-height: inherit; }
+	
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 0px; padding-bottom:10px;}
+	ul { list-style: disc outside; margin-left: 20px;}
+	ol { list-style: decimal; color:#666; margin-left:10px; font-size:16px;}
+	ol p {font-size:16px;}
+	ol, ul.square, ul.circle, ul.disc { margin-left: 25px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 10px 0px 0px 25px; color:#666; padding-bottom:1px;}
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 8px; font-size:16px;}
+	li { margin-left:25px; line-height: 24px; margin-bottom: 5px; }
+	ul.large li { line-height: 24px; }
+	li p { line-height: 24px; font-weight:normal; color:#666; margin-bottom:8px;}
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+	img {width:100%; margin-top:15px; margin-bottom:10px;}
+
+/* #Media specific modifications
+================================================== */
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+}
+
+/* iPad portrait browsing*/
+@media only screen and (min-width:768px) and (max-width: 959px) {
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	h1 { font-size: 24px; line-height: 32px; margin-bottom: 10px; }
+	h2 { font-size: 22px; line-height: 30px; margin-bottom: 8px; }
+	h3 { font-size: 20px; line-height: 24px; margin-bottom: 10px; }
+	h4 { font-size: 19px; line-height: 22px; margin-bottom: 2px; }
+	h5 { font-size: 18px; line-height: 19px; }
+
+	ul, ol { margin-bottom: 0px; padding-bottom:10px;}
+	ul { list-style: disc outside; margin-left: 20px;}
+	ol { list-style: decimal; color:#666; margin-left:10px; font-size:16px;}
+	ol p {font-size:16px;}
+	ol, ul.square, ul.circle, ul.disc { margin-left: 25px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 10px 0px 0px 10px; color:#666; padding-bottom:1px;}
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 8px; font-size:16px;}
+	li { margin-left:10px; line-height: 24px; margin-bottom: 5px; }
+	ul.large li { line-height: 24px; }
+	li p { line-height: 24px; font-weight:normal; color:#666; margin-bottom:8px;}
+
+	/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 16px; }
+	blockquote {margin: 15px 0px 15px 0px; padding: 15px 30px 0px 30px; border: 1px solid #CCC; background:#F9F9F9;}
+}
+
+/* Mobile Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait */
+@media only screen and (max-width: 480px) {
+	body, li, ul, p, ol, blockquote {font-size:15px !important; line-height:155% !important;}
+}
+
+
+
+

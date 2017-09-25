@@ -1,0 +1,783 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="/resources/stylesheets/layout.css">
+	<link rel="stylesheet" href="/resources/stylesheets/content.css">
+	<link rel="stylesheet" href="/resources/stylesheets/print.css">
+	<link rel="stylesheet" href="/resources/stylesheets/font-awesome.css">
+
+	<!-- Basic Page Needs
+  ================================================== -->
+    <script src="/resources/libraries/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  "HTML-CSS": { linebreaks: { automatic: true } },
+	         SVG: { linebreaks: { automatic: true } }
+	});
+	</script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<meta charset="utf-8">
+	<title>Reproduction</title>
+	<meta name="description" content="Course Notes for Reproduction">
+	<meta name="author" content="Kevan Lu">
+	<meta name="robots" content="noindex,nofollow"/>
+	
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-40381402-3', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="/references/favicon.png" type="image/png">
+
+	<!-- iOS Icons
+	================================================== -->
+	<link href="/resources/images/icon-iphone.png" rel="apple-touch-icon"/>
+	<link href="/resources/images/icon-ipad.png" rel="apple-touch-icon" sizes="76x76" />
+	<link href="/resources/images/icon-iphone-retina.png" rel="apple-touch-icon" sizes="120x120"/>
+	<link href="/resources/images/icon-ipad-retina.png" rel="apple-touch-icon" sizes="152x152" />
+</head>
+<body>
+    <div id="home-overlay">
+	<div class="index"><a href="http://www.schulichnotes.com"><i class="fa fa-stethoscope"></i> Schulich Notes</a></div>
+	<div id="header-search-icon"><a id="header-search-button"><i class="fa fa-search"></i></a></div>
+</div>
+<div id="header-search-bar">
+	<form class="search" action="http://www.schulichnotes.com/reproduction/search.html">
+	<div><input type="text" value="Search Reproduction" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" name="q" id="tipue_search_input"></div>
+	</form>
+</div>
+<div id="overlay"><h1><a style="border:none;" href="http://www.schulichnotes.com/reproduction">Reproduction</a></h1></div>
+    <div class="sidebar-background"></div>
+    <div class="sidebar">
+        <!-- Displays a Search Bar-->
+<div class="search-wrapper">
+	<div class="index"><a href="http://www.schulichnotes.com"><i class="fa fa-stethoscope"></i> Schulich Notes</a></div>
+	<form class="search" action="http://www.schulichnotes.com/reproduction/search.html">
+	<div style="float: left;"><input type="text" value="Search Reproduction" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" name="q" id="tipue_search_input"></div>
+	<div style="float: left;"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div>
+	<div style="clear: left;"></div>
+	</form>
+</div>
+
+        <div class="course-toc">
+            <div class="course-index">
+                <a href="http://www.schulichnotes.com/reproduction">Reproduction</a>
+            </div>
+            <nav>	
+	<li class="week">Week 1</li>
+	<ul>
+		<li class="day">Monday, November 10</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/10/intro-reproduction.html">Introduction to Reproduction</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/10/embryology-female-reproductive-tract.html">Embryology of the Female Reproductive Tract</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/10/anatomy-female-reproductive-tract.html">Anatomy of the Female Reproductive Tract</a></li></ul>
+		<li class="day">Tuesday, November 11</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/11/anatomy-perineum.html">Anatomy of the Perineum</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/11/functional-sexual-anatomy.html">Functional Sexual Anatomy</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/11/histology-pathology-female-male-reproductive-tract.html">Histology &amp; Pathology of Female &amp; Male Reproductive Tracts</a></li></ul>
+		<li class="day">Wednesday, November 12</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/12/male-reproductive-physiology.html">Male Reproductive Physiology</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/12/female-reproductive-physiology.html">Female Reproductive Physiology</a></li></ul>
+		<li class="day">Thursday, November 13</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/13/introduction-gynecological-clinical-exam.html">Introduction to the Gynecological Clinical Exam</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/13/hpo-axis-menstrual-cycle.html">The HPO Axis and the Menstrual Cycle</a></li></ul>
+		<li class="day">Friday, November 14</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/14/pharmacology-contraception.html">Pharmacology of Contraception</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/14/female-pelvis-anatomy-lab.html">Female Pelvis Anatomy Lab</a></li></ul>
+	</ul>
+	<li class="week">Week 2</li>
+	<ul>
+		<li class="day">Monday, November 17</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/17/TBL-small-group-notes.html">TBL Small Group Notes</a></li></ul>
+		<li class="day">Tuesday, November 18</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/18/understanding-promoting-reproductive-health-behaviours.html">Understanding &amp; Promoting Reproductive Health Behaviours</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/18/approach-amenorrhea.html">Approach to Amenorrhea</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/18/approach-abnormal-bleeding.html">Approach to Abnormal Bleeding</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/18/perineum-anatomy-lab.html">Perineum Anatomy Lab</a></li></ul>
+		<li class="day">Wednesday, November 19</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/19/approach-vulva-vagina-stis.html">An Approach to the Vulva, Vagina, &amp; STIs</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/19/approach-acute-chronic-pelvic-pain.html">An Approach to Acute &amp; Chronic Pelvic Pain</a></li></ul>
+		<li class="day">Thursday, November 20</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/20/pathology-abnormal-bleeding.html">Pathology of Abnormal Bleeding</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/20/pathology-pelvic-pain.html">Pathology of Pelvic Pain</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/20/chsg-adolescent-amenorrhea.html">Child Health Small Groups &ndash; Adolescent Amenorrhea</a></li></ul>
+		<li class="day">Friday, November 21</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/21/clinical-anatomy-review.html">Clinical Anatomy Review</a></li></ul>
+	</ul>
+	<li class="week">Week 3</li>
+	<ul>
+		<li class="day">Monday, November 24</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/24/summary-gynecologic-cancer.html">Summary of Gynecologic Cancer</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/24/cervical-cancer-screening.html">Cervical Cancer Screening</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/24/clinical-exam-cervix.html">Clinical Exam of the Cervix</a></li></ul>
+		<li class="day">Tuesday, November 25</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/25/issues-perimenopause-menopause.html">Issues of Perimenopause &amp; Menopause</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/25/pelvic-organ-prolapse.html">Pelvic Organ Prolapse</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/25/approach-pathology-post-menopausal-bleeding.html">Approach to &amp; Pathology of Post-Menopausal Bleeding</a></li></ul>
+		<li class="day">Wednesday, November 26</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/26/approach-pelvic-mass.html">Approach to a Pelvic Mass</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/26/gynecologic-tract-imaging.html">Gynecologic Tract Imaging</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/26/family-physician-approach-breast-problems.html">A Family Physician's Approach to Common Breast Problems</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/26/pathology-pelvic-mass.html">Pathology of a Pelvic Mass</a></li></ul>
+		<li class="day">Thursday, November 27</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/27/breast-anatomy-histology.html">Breast Anatomy &amp; Histology</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/27/clinical-examination-breast.html">Clinical Examination of the Breast</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/27/breast-pathology.html">Breast Pathology</a></li></ul>
+		<li class="day">Friday, November 28</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/28/breast-imaging.html">Breast Imaging</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/28/surgical-management-breast-cancer.html">Surgical Management of Breast Cancer</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/11/28/medical-management-breast-cancer.html">Medical Management of Breast Cancer</a></li></ul>
+	</ul>
+	<li class="week">Week 4</li>
+	<ul>
+		<li class="day">Monday, December 1</li>
+		<ul></ul>
+		<li class="day">Tuesday, December 2</li>
+		<ul></ul>
+		<li class="day">Wednesday, December 3</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/03/approach-sexual-orientation.html">Approach to Sexual Orientation</a></li></ul>
+		<li class="day">Thursday, December 4</li>
+		<ul></ul>
+		<li class="day">Friday, December 5</li>
+		<ul></ul>
+	</ul>
+	<li class="week">Week 5</li>
+	<ul>
+		<li class="day">Tuesday, December 9</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/09/drug-exposure-pregnancy-lactation.html">Drug Exposure in Pregnancy and Lactation</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/09/embryology-anatomy-placenta.html">Embryology &amp; Anatomy of the Placenta</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/09/first-trimester-bleeding-il.html">First Trimester Bleeding IL</a></li></ul>
+		<li class="day">Wednesday, December 10</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/10/physiology-pregnancy.html">Physiology of Pregnancy</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/10/prenatal-screening-diagnosis.html">Prenatal Screening and Diagnosis</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/10/fetal-ultrasound.html">Fetal Ultrasound</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/10/first-trimester-complications.html">First Trimester Complications</a></li></ul>
+		<li class="day">Thursday, December 11</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/11/fetal-growth-health.html">Fetal Growth &amp; Health</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/11/hypertension-pregnancy.html">Hypertension in Pregnancy</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/11/premature-labour.html">Premature Labour</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/11/multiple-gestation.html">Multiple Gestation</a></li></ul>
+		<li class="day">Friday, December 12</li>
+		<ul><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/12/labour-birth.html">Labour & Birth</a></li><li class="lecture"><a href="http://www.schulichnotes.com/reproduction/2014/12/12/complicated-labour-c-section-vbac.html">Complicated Labour, Caesarian Section, VBAC</a></li></ul>
+	</ul>
+	<li class="week">Week 6</li>
+	<ul>
+		<li class="day">Monday, December 15</li>
+		<ul></ul>
+		<li class="day">Tuesday, December 16</li>
+		<ul></ul>
+		<li class="day">Wednesday, December 17</li>
+		<ul></ul>
+		<li class="day">Thursday, December 18</li>
+		<ul></ul>
+	</ul>
+</nav>
+        </div>
+    </div>
+    <div class="content-offset">
+        <div class="content-background"></div>
+        <div class="content">
+            <div class="single post">
+                <!-- Post Layout -->
+                <div class="title"><h1>Prenatal Screening and Diagnosis</h1></div>
+                <info datetime="2014-12-10">
+                    <span class="author"><a href="http://www.schulichnotes.com/about.html#kevanlu">Kevan Lu</a></span>
+                    <span class="date">Wednesday, December 10, 2014</span>
+                </info>
+                <div class="body"><blockquote>
+  <p>####<strong>Prenatal Testing Comparison Chart</strong>
+- See <a href="/references/rep_14_15_Siu_Prenatal_Testing_Comparison_Chart.pdf">Prenatal Testing Comparison Chart</a>.</p>
+</blockquote>
+
+<h2 id="lecture-objectives"><strong>Lecture Objectives</strong></h2>
+<ol>
+  <li>Identify risk factors based on ethnicity and genetic history</li>
+  <li>Differentiate between prenatal screening and diagnostic tests</li>
+  <li>Compare IPS and NIPT in terms of timing, detection rates, pros and cons.
+    <ul>
+      <li>IPS = Integrated Prenatal Screening.</li>
+      <li>NIPT = Non-Invasive Prenatal Testing, new test.</li>
+    </ul>
+  </li>
+  <li>Describe amniocentesis, CVS, and ultrasound in terms of the procedure, indications, limitations, and risks</li>
+  <li>Identify factors that determine whether or not couples choose prenatal diagnosis.</li>
+</ol>
+
+<blockquote>
+  <p>####<strong>Objective</strong>
+- Identify risk factors based on ethnicity and genetic history.</p>
+</blockquote>
+
+<h2 id="risk-factors-for-genetic-disorders"><strong>Risk Factors for Genetic Disorders</strong></h2>
+
+<ul>
+  <li><strong>Age</strong> → increasing risk for aneuploidy.</li>
+  <li><strong>Ethinicity</strong>:
+    <ul>
+      <li><em>Mediterranean</em> → beta-thalassemia.</li>
+      <li><em>Asian</em> → alpha-thalassemia (
+        <ul>
+          <li>Can present as HbH disease or hydrops fetalis if there’s a mutation in 3/4 of the α-globin genes respectively.</li>
+        </ul>
+      </li>
+      <li><em>African</em> → sickle cell.</li>
+      <li><em>Ashkenazi Jewish</em> → Tay-Sach’s Disease (progressively destroys neurons).</li>
+      <li><em>Amish/Mennonite</em> → various.</li>
+    </ul>
+  </li>
+  <li><strong>Positive Family History</strong>
+    <ul>
+      <li>Family history of miscarriages, stillbirths, malformations, mental retardation, etc.</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>####<strong>Objective</strong>
+- Differentiate between prenatal screening and diagnostic tests.</p>
+</blockquote>
+
+<ul>
+  <li><strong>Prenatal Genetic Testing</strong> → either a screening or diagnostic test done to assess a fetus for malformations or a genetic disorder.
+    <ul>
+      <li><em>Invasive Tests</em> → CVS (Chorionic Villus Sampling), amniocentesis, cordocentesis (cordocentesis is very rarely done).</li>
+      <li><em>Non-invasive Tests</em> → IPS, NIPT, U/S.</li>
+    </ul>
+  </li>
+  <li>Prenatal testing should be <i>offered</i> in order to provide <em>informed choice</em> to parents at risk for having a child with an abnormality.
+ 	- If the test is negative, it will provide reassurance and reduce anxiety.
+    <ul>
+      <li>If the test is positive, it will help guide management at delivery.</li>
+    </ul>
+  </li>
+  <li><em><strong>All</strong> pregnant women are eligible for prenatal screening</em>. </li>
+</ul>
+
+<h2 id="prenatal-screening-tests"><strong>Prenatal Screening Tests</strong></h2>
+<ul>
+  <li>Prenatal <i>screening</i> tests include:
+    <ol>
+      <li><strong>Integrated Prenatal Screening (IPS)</strong>, with or without nuchal translucency.</li>
+      <li><em>First Trimester Screening (FTS)</em> → testing only in the first trimester.</li>
+      <li><em>Quadruple Maternal Serum Screening</em> → a blood test without any U/S testing.</li>
+      <li><strong>Non-Invasive Prenatal Testing (NIPT)</strong></li>
+    </ol>
+  </li>
+  <li>These are done for <em>Trisomy 21 and Trisomy 18</em>.</li>
+  <li>Up until recently (with the advent of NIPT), <em>the screening test of choice has been IPS.</em>
+    <ul>
+      <li>You don’t need to remember the details of FTS, or quadruple maternal serum screening, because <i>IPS is better</i>, and is almost always done.</li>
+      <li>Both FTS and quadruple maternal serum screening have a lower detection rate and a higher false positive rate.</li>
+      <li>In the next few years, the test of choice may change to NIPT.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="prenatal-diagnostic-tests"><strong>Prenatal Diagnostic Tests</strong></h2>
+<ul>
+  <li>Prenatal <i>diagnostic</i> tests include:
+    <ul>
+      <li><strong>Amniocentesis</strong>.</li>
+      <li><strong>Chorionic Villus Sampling</strong> (CVS).</li>
+    </ul>
+  </li>
+  <li>These procedures provide a source of cells or amniotic fluid for cytogenetic, molecular (DNA), or biochemical (enzyme) analysis of genetic disorders.</li>
+</ul>
+
+<hr />
+
+<blockquote>
+  <p>####<strong>Objective</strong>
+- Compare IPS and NIPT in terms of timing, detection rates, pros and cons.
+	- <em>IPS</em> = Integrated Prenatal Screening.
+	- <em>NIPT</em> = Non-Invasive Prenatal Testing.</p>
+</blockquote>
+
+<h2 id="integrated-prenatal-screening-ips"><strong>Integrated Prenatal Screening (IPS)</strong></h2>
+
+<ul>
+  <li><strong>Integrated Prenatal Screening</strong> is a 3-part screening process combining:
+    <ol>
+      <li>PAPP-A → Pregnancy-Associated Plasma Protein A.</li>
+      <li><em>Nuchal Translucency U/S</em>.</li>
+      <li>AFP, hCG, unconjugated estriol (uE3).</li>
+    </ol>
+  </li>
+  <li>These are blood/imaging tests that look for physical/chemical signs of trisomy 18/21.</li>
+  <li>PAPP-A, and nuchal translucency are done in the <i>first trimester</i>.</li>
+  <li>AFP, hCG, uE3 are measured in the <i>second trimester</i>.</li>
+  <li>The final risk assessment for neural tube defects and trisomy 21 is done in the second trimester, after the 3rd blood test is done.
+    <ul>
+      <li>With IPS, the result is listed as <strong>screen positive</strong> if the resultant risk for Trisomy-21 is <em>greater than 1 in 200</em>, the screening cutoff risk.</li>
+      <li>Any time a screen positive result is seen, <em>diagnostic</em> testing should be offered.</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>####<strong>Integrated Prenatal Screening</strong>
+- <em>IPS is comprised of 3 parts</em>:
+	1. PAPP-A.
+	2. Nuchal translucency on U/S.
+	3. AFT, hCG, and uE3.
+- PAPP-A and nuchal translucency are done in T1.
+- AFP, hCG, uE3 are done in T2.
+- Final risk assessment is done in T2 after the 3rd blood test.</p>
+</blockquote>
+
+<ul>
+  <li><strong>Advantages of IPS</strong>
+    <ul>
+      <li>Has the <em>best detection rate</em> for trisomy 21 (90%), with the lowest false positive rate (2%), of all the screening tests.</li>
+      <li>High detection rate for neural tube defects as well (NTDs), via AFP.</li>
+    </ul>
+  </li>
+  <li><strong>Disadvantages of IPS</strong>
+    <ul>
+      <li>Does not detect trisomy 13.</li>
+      <li><em>Results not avalaible until T2</em>.</li>
+      <li>Access to nuchal translucency measurements may be limited (the test is difficult to perform).</li>
+    </ul>
+  </li>
+  <li><strong>Nuchal Translucency</strong>
+    <ul>
+      <li>As mentioned above, this is one component of IPS or FTS.</li>
+      <li>It’s an ultrasound measurement of the thickness of the skin at the back of the neck.</li>
+      <li>Larger nuchal translucencies are thought to be due to a delay in lymphatic drainage of the back of the neck.</li>
+      <li>Used as a marker for trisomy-21, other chromosomal disorders, and congenital heart and renal malformations.</li>
+      <li><i>Unlike other tests, this is a marker for other chromosomal abnormalities in addition to trisomy-21</i>.</li>
+      <li>Optimally done at 11-14 weeks.</li>
+      <li><em>If the nuchal translucency is very large, patients should be referred for prenatal counselling and diagnosis.</em>
+        <ul>
+          <li>Sometimes, since nuchal translucency is part of IPS, some families will wait until T2 for the third blood test (AFP, hCG, uE3) before making any decisions.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Soft Markers</strong>
+    <ul>
+      <li>Nuchal translucency is a <i>soft marker</i>.</li>
+      <li>These are other ultrasound findings that have been <i>associated</i> with an increased risk for aneuploidy, but are not themselves diagnostic.</li>
+      <li>Some examples are listed below (<i>you don’t need to remember these</i>):</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Soft Marker</th>
+      <th style="text-align: left">Risk of Aneuploidy (Likelihood Ratio)</th>
+      <th style="text-align: left">Other Associations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Echogenic Intracardiac Focus</td>
+      <td style="text-align: left">LR of 2</td>
+      <td style="text-align: left">None (no CHD risk)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Echogenic Bowel (brighter than bone)</td>
+      <td style="text-align: left">LR of 6</td>
+      <td style="text-align: left">CF, congenital infection, intramniotic bleeding, bowel malformations</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><em>Thickened Nuchal Fold</em> (≥6mm)</td>
+      <td style="text-align: left">LR of 17</td>
+      <td style="text-align: left">Single gene defects, CHD</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mild Ventriculomegaly (&gt;10 to ≤15 mm)</td>
+      <td style="text-align: left">LR of 9</td>
+      <td style="text-align: left">Congenital infection, abnormal neurodevelopment</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Choroid plexus cysts</td>
+      <td style="text-align: left">LR of 7 (for trisomy 18)</td>
+      <td style="text-align: left">None</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/77ng9w95.png" />
+<code>An IPS risk assessment result will look like this. This is a 40-year-old's result, so their baseline risk is already very high.</code></p>
+
+<ul>
+  <li><strong>What do you do if you have a positive IPS?</strong>
+    <ul>
+      <li>Patients are now being counselled that they have 2 options:
+        <ol>
+          <li><em>NIPT</em> (Non-invasive Prenatal Testing).</li>
+          <li><em>Invasive Diagnostic Tests</em> (Amniocentesis, Chorionic Villus Sampling).</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="non-invasive-prenatal-testing-nipt"><strong>Non-Invasive Prenatal Testing (NIPT)</strong></h2>
+
+<ul>
+  <li>NIPT is a <em>maternal blood test</em> that screens for trisomy 21, 18, and 13.
+    <ul>
+      <li>The idea behind NIPT was to develop a non-invasive way (ie. no risk of miscarriage) of testing whether a baby has Down’s syndrome.</li>
+      <li>Unlike IPS, that’s specific for trisomy 18 and 21, NIPT also allows us to detect trisomy 13, and sex-chromosome anueploidy (eg. Turner’s and Klinefelter’s).</li>
+      <li>NIPT can be performed at &gt;9 weeks gestation, and results are available in ~10 business days. Hence, <em>NIPT can provide earlier results than IPS</em>.</li>
+    </ul>
+  </li>
+  <li>As of May, the Ministry of Health has been funding NIPT as a next-step test for couples with a positive IPS.
+    <ul>
+      <li><em>With a positive IPS, families are now counseled that they can either have NIPT, or more invasive testing</em>.</li>
+    </ul>
+  </li>
+  <li><strong>How does NIPT work?</strong>
+    <ul>
+      <li>Within the maternal blood, there are actually some fetal cells, which, when broken down, result in cell free fetal DNA (cff-DNA)</li>
+      <li>These are primarily derived from the placenta (recall that there are extravillous trophoblasts that migrate into the uterine arteries and remodel them into spiral arteries).</li>
+      <li>NIPT involves taking a maternal blood sample, amplifying and differentiating between the maternal/fetal cell free DNA (using complicated algorithms), and looking at the relative amount of DNA that comes from each chromosome.</li>
+    </ul>
+  </li>
+  <li><em>Although NIPT is highly sensitive and specific, it is <strong>not a diagnostic test</strong>.</em>
+    <ul>
+      <li>Since NIPT samples <i>placental</i> cells that are in the maternal blood, there is still the possibility of <strong>placental mosaicism</strong>.</li>
+      <li>For instance, aneuploidy may occur in the placental cells (ie. the trophoblasts) but not in the fetal ones (ie. the inner cell mass).</li>
+      <li>In other words, even if we have a screen positive with NIPT, <i>we still confirm the results with an invasive test</i>, in cases where the couple decides to terminate the pregnancy.</li>
+      <li>Confirming the results is not necessary if the couple wishes to continue with the pregnancy (since invasive testing does have a risk for miscarriage).</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/images/qbole7gd.png" /></p>
+
+<ul>
+  <li><strong>Currently, in Ontario, NIPT is only funded for high-risk patients:</strong>
+  <img class="right" src="/images/hac9xyi8.png" />
+    <ul>
+      <li>NIPT is currently <em>not</em> being recommended or funded as a first-line screening test for low risk women, as it’s much more expensive.</li>
+      <li>In other words, in most cases, IPS is still the first screening test of choice, and NIPT is only done if the IPS is positive.</li>
+      <li>NIPT can still be paid for out-of-pocket, in cases where the couple wants earlier or more accurate results.</li>
+    </ul>
+  </li>
+  <li><strong>In what cases is NIPT covered at the moment?</strong>
+    <ol>
+      <li>≥40 years at EDD (estimated date of delivery).</li>
+      <li>Positive prenatal screen (eg. Positive IPS).</li>
+      <li>Nuchal Translucency ≥ 3.5 mm.</li>
+      <li>Previous aneuploidy.</li>
+      <li>Ultrasound abnormalities (ie. soft markers).</li>
+    </ol>
+  </li>
+  <li>These criteria will likely change in the near future as NIPT becomes more widespread and affordable.</li>
+  <li><strong>Advantages of NIPT</strong>:
+    <ul>
+      <li>Fewer invasive tests.</li>
+      <li>Early test result.</li>
+      <li>No risk of miscarriage.</li>
+      <li>Detects the most common chromosomal aneuploidies.</li>
+      <li>Higher detection rates and lower false positive rates than IPS or MSS.</li>
+    </ul>
+  </li>
+  <li><strong>Limitations of NIPT</strong>:
+    <ul>
+      <li>NIPT cannot:
+        <ul>
+          <li>Detect other chromosomal differences beyond trisomy 13/18/21, 45X, 47XXY.</li>
+          <li>Completely rule out aneuploidy.</li>
+          <li>Detect single gene conditions.</li>
+          <li>Detect congenital anomalies (eg. NTDs, which IPS can).</li>
+        </ul>
+      </li>
+      <li>The fetal fraction of cff-DNA may be too low (eg. high maternal BMI, twins).</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="ips-vs-nipt"><strong>IPS vs. NIPT</strong></h2>
+
+<table class="small">
+	<tr>
+		<th></th>
+		<th style="text-align:left">Integrated Prenatal Screening (IPS)</th>
+		<th style="text-align:left">Non-Invasive Prenatal Testing (NIPT)</th>
+	</tr>
+	<tr>
+		<td style="text-align:left"><strong>Description</strong></td>
+		<td style="text-align:left">
+			<ul>
+				<li>IPS consists of 3 tests:</li>
+				<ol>
+					<li>T1 PAPP-A</li>
+					<li>T1 Nuchal Translucency</li>
+					<li>T2 AFP, hCG, uE3</li>
+				</ol>
+			</ul>
+		</td>
+		<td style="text-align:left">
+			<ul>
+				<li>Maternal blood test that looks for cell-free fetal DNA, and looks at the DNA contribution from each chromosome.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align:left"><strong>Detection Rates</strong></td>
+		<td style="text-align:left">
+			<ul>
+				<li>90% for trisomy 21, (2% false positive rate).</li>
+				<li>80% without nuchal translucency</li>
+			</ul>
+		</td>
+		<td style="text-align:left">
+			<ul>
+				<li><em>Trisomy 21</em>: 99-100% sensitivity, 98-100% specificity, 90-95% PPV, 99.9% NPV</li>
+				<li><em>Trisomy 18</em>: 99-100% sensitivity, 97-100% specificity, 84% PPV, 99% NPV</li>
+				<li><em>Trisomy 13</em>: 99-100% sensitivity, 79-100% specificity, 52% PPV, 100% NPV</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align:left"><strong>Advantages</strong></td>
+		<td style="text-align:left">
+			<ul>
+				<li>Better detection rate for T21 than FTS or MSS</li>
+				<li>Can also detect neural tube defects (NTDs).</li>
+				<li>Cheaper than NIPT</li>
+			</ul>
+		</td>
+		<td style="text-align:left">
+			<ul>
+				<li>Can be performed at &ge;9 weeks.</li>
+				<li>Better sensitivity and specificity than IPS</li>
+				<li>Unlike IPS, can also detect T13, 45X, and 47XXY</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align:left"><strong>Disadvantages</strong></td>
+		<td style="text-align:left">
+			<ul>
+				<li>Must wait until second trimester for risk-assessment.</li>
+				<li>Access to nuchal translucency measurements are limited.</li>
+				<li>Cannot detect chromosomal abnormalities other than T18 and T21.</li>
+			</ul>
+		</td>
+		<td style="text-align:left">
+			<ul>
+				<li>Significantly more expensive than IPS</li>
+				<li>Cannot be done if cff-DNA fraction is too low (multiple gestation, high BMI mom)</li>
+				<li>Cannot detect congenital abnormalities (eg. NTDs, which IPS can detect)</li>
+			</ul>
+		</td>
+	</tr>
+</table>
+
+<blockquote>
+  <p>####<strong>Objective</strong>
+- Describe amniocentesis, CVS, and ultrasound in terms of the procedure, indications, limitations, and risks.</p>
+</blockquote>
+
+<ul>
+  <li>Oftentimes, patients will opt to skip NIPT completely, and directly proceed to an invasive test, if they have a positive IPS.
+    <ul>
+      <li>This is because IPS is only completed in the second trimester, and they may be getting close to the cutoff at which abortion is offered in Canada (23 weeks, 6 days).</li>
+      <li>FISH performed on an amniocentesis can identify aneuploidy, and will provide results faster than an NIPT (3 days vs. 10 business days).</li>
+    </ul>
+  </li>
+  <li><strong>What are the indications for invasive diagnostic testing?</strong>
+    <ul>
+      <li>Advanced maternal age (&gt;37 years).</li>
+      <li>Previous child with chromosome abnormality.</li>
+      <li>Parent is a balanced translocation carrier.</li>
+      <li>Family history of a genetic disorder that can be diagnosed prenatally (eg known mutation, known biochemical disorder).</li>
+      <li>Positive prenatal screening, NIPT, or ultrasound finding.</li>
+    </ul>
+  </li>
+  <li><strong>What are the risks for prenatal invasive diagnosis?</strong>
+    <ul>
+      <li><em>Pregnancy complications</em> (eg. amniotic fluid loss)</li>
+      <li><em>Pregnancy loss</em></li>
+      <li><em>Misdiagnosis</em>
+        <ul>
+          <li>This is particularly true for chorionic villus sampling, where there can be maternal cell contamination.</li>
+          <li>Placental mosaicism is also a problem with CVS.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="amniocentesis"><strong>Amniocentesis</strong></h2>
+<ul>
+  <li><em>The invasive test of choice with a positive NIPT</em>.</li>
+  <li>U/S guided sampling of the amniotic fluid.</li>
+  <li>15-18 weeks.</li>
+  <li><strong>0.5% (1/200) risk for miscarriage.</strong></li>
+  <li>Results are available in 2 to 3 weeks (karyotype), although can do a rapid test with FISH just to check for aneuploidy.</li>
+  <li><em>Advantages</em>: high accuracy for cytogenetic analysis,
+can also assess neural tube defect (NTD) risk</li>
+  <li><em>Disadvantages</em>: results available at late stage</li>
+</ul>
+
+<h2 id="chorionic-villus-sampling"><strong>Chorionic Villus Sampling</strong></h2>
+<ul>
+  <li>Sampling of the embryonic component of the placenta (the chorionic villi).</li>
+  <li>10-12 weeks gestation → <em>earlier than amniocentesis</em>.</li>
+  <li>1% risk for miscarriage.</li>
+  <li>Results in 2 weeks.</li>
+  <li><em>Advantages</em>: <strong>earlier results</strong> than amniocentesis.</li>
+  <li><em>Disadvantages</em>: 
+    <ul>
+      <li>Occasional inability to obtain sample</li>
+      <li>Risk of <em>placental mosaicism</em>.</li>
+      <li><strong>Cannot assess NTD risk</strong>.</li>
+      <li>Possible maternal cell contamination.</li>
+      <li>Higher risk of miscarriage.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="prenatal-ultrasound"><strong>Prenatal Ultrasound</strong></h2>
+<ul>
+  <li>ALL pregnancies at 18-20 weeks should have a fetal anatomy scan.</li>
+  <li>Used as a followup of screen-positive risk for NTD.</li>
+  <li>Can also detect other structural malformations</li>
+  <li>The accuracy of the results depends on technical skills and degree of severity of defect.</li>
+</ul>
+
+<h2 id="amniocentesis-vs-cvs-vs-prenatal-us"><strong>Amniocentesis vs CVS vs Prenatal U/S</strong></h2>
+
+<table class="small">
+	<tr>
+		<th></th>
+		<th style="text-align:left">Amniocentesis</th>
+		<th style="text-align:left">Chorionic Villus Sampling</th>
+		<th style="text-align:left">Prenatal U/S</th>
+	</tr>
+	<tr>
+		<td style="text-align:left"><strong>Description</strong></td>
+		<td style="text-align:left">
+			<ul>
+				<li>Sampling of the amniotic fluid.</li>
+				<li><strong>15-18 weeks</strong></li>
+			</ul>
+		</td>
+		<td style="text-align:left">
+			<ul>
+				<li>Sampling of the chorionic villi of the placenta.</li>
+				<li><strong>10-12 weeks</strong></li>
+			</ul>
+		</td>
+		<td style="text-align:left">
+			<ul>
+				<li>U/S scan looking at the fetal anatomy.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align:left"><strong>Indications</strong></td>
+		<td style="text-align:left" colspan="2">
+			<ul>
+				<li>Advanced maternal age (&gt;37 years).</li>
+				<li>Previous child with chromosome abnormality.</li>
+				<li>Parent is a balanced translocation carrier.</li>
+				<li>Family history of a genetic disorder that can be diagnosed prenatally.</li>
+				<li>Positive prenatal screening, NIPT, or ultrasound finding.</li>
+			</ul>
+		</td>
+		<td style="text-align:left">
+			<ul>
+				<li>Done in all pregnancies at 18-20 weeks.</li>
+				<li>Done as a follow-up for IPS screen-positive for NTD</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align:left"><strong>Advantages</strong></td>
+		<td style="text-align:left">
+			<ul>
+				<li>Higher accuracy for cytogenetic analysis than CVS.</li>
+				<li>Can assess NTD risk.</li>
+				<li>FISH can be performed on an amnio sample for rapid diagnosis of aneuploidy.</li>
+			</ul>
+		</td>
+		<td style="text-align:left">
+			<ul><li>Can be performed earlier than amniocentesis.</li></ul>
+		</td>
+		<td style="text-align:left">
+			<ul><li>Can detect other structural malformations.</li></ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align:left"><strong>Disadvantages</strong></td>
+		<td style="text-align:left">
+			<ul><li>Can only be performed at 15-18 weeks.</li></ul>
+		</td>
+		<td style="text-align:left">
+			<ul>
+				<li>Occasional inability to obtain sample.</li>
+				<li><em>Higher rate of misdiagnosis</em> due to risk of placental mosaicism or maternal cell contamination.</li>
+				<li>Cannot assess NTD risk.</li>
+				<li>Higher risk of miscarriage than amniocentesis.</li>
+			</ul>
+		</td>
+		<td style="text-align:left">
+			<ul>
+				<li>Accuracy varies depending on technical skill and severity of the defect.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align:left"><strong>Risks</strong></td>
+		<td style="text-align:left">
+			<ul>
+				<li><em>0.5% (1 in 200) risk of miscarriage.</em></li>
+				<li>Amniotic fluid loss can cause oligohydramnios.</li>
+			</ul>
+		</td>
+		<td style="text-align:left">
+			<ul><li><em>1% risk of miscarriage.</em></li></ul>
+		</td>
+		<td style="text-align:left"></td>
+	</tr>
+</table>
+
+<blockquote>
+  <p>####<strong>Objective</strong>
+- Identify factors that determine whether or not couples choose prenatal diagnosis.</p>
+</blockquote>
+
+<ul>
+  <li><strong>Reasons why couples choose to have prenatal testing</strong>
+    <ul>
+      <li>Increasing maternal age.</li>
+      <li>Previous child/family history of inherited disorders.</li>
+      <li>They want to be prepared for the birth of a baby with a problem (no surprises).</li>
+      <li>Want to have the option of pregnancy termination if a problem is found.</li>
+    </ul>
+  </li>
+  <li><strong>Reasons why couples choose <span style="color:red">not</span> to have prenatal testing</strong>.
+    <ul>
+      <li>Perceive that the risks outweight the benefits.</li>
+      <li>Want to wait until the baby is born to see if there are any problems.</li>
+      <li>Feel that knowledge of a problem in a baby will affect their enjoyment of the pregnancy.</li>
+      <li>Unaware of options for prenatal testing.</li>
+      <li>Negative publicity from family/friends/media.</li>
+      <li>Emotional anxiety with a positive screening result (either a true/false positive).</li>
+      <li>There’s still potential for false negatives with a <i>screening</i> test.</li>
+    </ul>
+  </li>
+</ul>
+                
+                </div>
+            </div>
+            <div class="pagination">
+                <div style="width:50%; float:left;">
+                     
+                        <a class="newer" href="http://www.schulichnotes.com/reproduction/2014/12/10/physiology-pregnancy.html"><i class="fa fa-angle-left"></i> Physiology of Pregnancy</a> 
+                     
+                </div>
+                <div style="width:50%; float:right;">
+                     
+                        <a class="older" href="http://www.schulichnotes.com/reproduction/2014/12/10/fetal-ultrasound.html">Fetal Ultrasound <i class="fa fa-angle-right"></i></a> 
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://www.schulichnotes.com/reproduction/index.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/resources/stylesheets/search.css">	
+<script src="/resources/libraries/tipuesearch_set.js" type="text/javascript"></script>
+<script src="/resources/libraries/tipuesearch.js" type="text/javascript"></script>
+<script src="/resources/libraries/classie.js" type="text/javascript"></script>
+<script>
+var search = document.getElementById('header-search-icon');
+var searchbar = document.getElementById('header-search-bar');
+search.onclick = function(){classie.toggle(searchbar, 'search-bar-open');}
+$(document).ready(function() {$('#tipue_search_input').tipuesearch();});
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+---
+---
+{% include head.html %}
+<body>
+    {% include header.html %}
+    <div class="sidebar-background"></div>
+    <div class="sidebar">
+        {% include searchbar.html %}
+        <div class="course-toc">
+            <div class="course-index">
+                <a href="{{ site.course_url }}">{{ site.course_name }}</a>
+            </div>
+            {% include sidebar.html %}
+        </div>
+    </div>
+    <div class="content-offset">
+        <div class="content-background"></div>
+        <div class="content">
+            <div class="single post">
+                <!-- Post Layout -->
+                <div class="title"><h1>{{ page.title }}</h1></div>
+                <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+                    <span class="author"><a href="http://www.schulichnotes.com/about.html#{{ page.author_id }}">{{ page.author }}</a></span>
+                    <span class="date">{{ page.date | date: "%A, %B %d, %Y" }}</span>
+                </info>
+                <div class="body">{{ content }}                
+                </div>
+            </div>
+            <div class="pagination">
+                <div style="width:50%; float:left;">
+                    {% if page.previous.url %} 
+                        <a class="newer" href="{{ site.course_url }}{{page.previous.url}}"><i class="fa fa-angle-left"></i> {{page.previous.title}}</a> 
+                    {% endif %} 
+                </div>
+                <div style="width:50%; float:right;">
+                    {% if page.next.url %} 
+                        <a class="older" href="{{ site.course_url }}{{page.next.url}}">{{page.next.title}} <i class="fa fa-angle-right"></i></a> 
+                    {% endif %} 
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>

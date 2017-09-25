@@ -1,0 +1,32 @@
+---
+---
+{% include head.html %}
+<body>
+	{% include header.html %}
+	<div class="sidebar-background"></div>
+    <div class="sidebar">
+        {% include searchbar.html %}
+        <div class="course-toc">
+            <div class="course-index">
+                <a href="{{ site.course_url }}">{{ site.course_name }}</a>
+            </div>
+            {% include sidebar.html %}
+        </div>
+    </div>
+    <div class="content-offset">
+    	<div class="content-background"></div>
+    	<div class="index-header"></div>
+		<div class="content">
+			
+			<!-- Title and Image -->
+			<div id="course-title"><h1>{{ site.course_name }}</h1></div>
+			<div id="personal-name"><h2><a href="http://www.kevan.lu">Kevan Lu</a></h2></div>
+			<div id="course-year"><h2>{{ site.course_year }}</h2></div>
+ 			<div id="course-art"><img class="cover-art" src="{{ site.course_image }}"></div>
+
+ 			{% include toc.html %}
+		</div>
+	</div>
+	{% include footer.html %}
+</body>
+</html>

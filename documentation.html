@@ -1,0 +1,85 @@
+---
+---
+<!DOCTYPE html>
+{% include head.html %}
+{% include home_header.html %}
+{% include random_url.html %}
+
+<div id="home-index">
+	<div class="home-wrapper">
+		<div class="row">
+			<div class="home-left">
+				<div id="side-details">
+					<a href="https://docs.google.com/forms/d/1GR2ZTofNRkkpsH24wntZKZRBGc2ekZaH2nQT2xKZaD4/viewform" style="margin-bottom:0px" class="button">Contribute to the Project</a>
+					<li class="side-header"><a href="" onclick="event.preventDefault(); changeRandomURL();" id="refresh"><img class="refresh-icon" src="images/refresh-icon.svg"></a>Read a Random Note</li>
+					<ul>
+						<li class="sidelink"><a id="random_link" href=""></a></li>
+						<script type="text/javascript">changeRandomURL();</script>
+					</ul>
+				</div>
+			</div>
+			<div class="home-right">
+				<div class="half-page">
+					<div id="home-index-year"><a href="#getting-started">Getting Started</a></div>
+					<ul>
+						<li><a href="#introduction">Introduction</a></li>
+						<li><a href="#lecture-assignments">Lecture Assignments</a></li>
+						<li><a href="#writing-lecture-notes">Writing Lecture Notes</a></li>
+						<li><a href="#submitting-lecture-notes">Submitting Lecture Notes</a></li>
+					</ul>
+				</div>
+				<div class="half-page">
+					<div id="home-index-year"><a href="#layout-reference-guide">Layout Reference Guide</a></div>
+					<ul>
+						<li><a href="#introduction-to-markdown">Introduction to Markdown</a></li>
+						<li><a href="#entering-basic-notes">Entering Basic Notes</a></li>
+						<li><a href="#advanced-features">Advanced Features</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="getting-started" class="home-divider">
+	<div class="home-wrapper">
+		<div class="row">
+			<div class="home-left"><div class="home-reference-number"><i class="fa fa-flag-o"></i></div></div>
+			<div class="home-right">
+				<div class="home-reference-title">Getting Started</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="home-wrapper">
+	<div class="home-offset">
+		<div class="reference">
+			{% for post in site.categories.starting %}
+				 {{ post.content }}
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div id="layout-reference-guide" class="home-divider">
+	<div class="home-wrapper">
+		<div class="row">
+			<div class="home-left"><div class="home-reference-number"><i class="fa fa-file-text-o"></i></div></div>
+			<div class="home-right">
+				<div class="home-reference-title">Layout Reference Guide</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="home-wrapper">
+	<div class="home-offset">
+		<div class="reference">
+			{% for post in site.categories.reference %}
+				 {{ post.content }}
+			{% endfor %}
+			<div style="margin-left:0px; border-top:2px solid #CCC; padding-top:12px; margin-top:10px; padding-bottom:25px;">
+				<span id="footer_text">Written by <a href="http://www.kevan.lu">Kevan Lu</a>, &copy; 2014</span>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
