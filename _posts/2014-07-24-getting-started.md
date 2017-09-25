@@ -51,7 +51,7 @@ To set up StackEdit, follow these instructions:
 5. Scroll down to *UserCustom Extension* and click it.
 6. *Paste* in the following code:
 	<pre><code>userCustom.onReady = function() {
-	    $('head').append('&lt;link href="https://dl.dropboxusercontent.com/u/157117/notes/resources/stylesheets/stackedit.css" rel="stylesheet" /&gt;');
+	    $('head').append('&lt;link href="/resources/stylesheets/stackedit.css" rel="stylesheet" /&gt;');
 	};</code></pre>
 7. Press *OK*.
 
