@@ -1,6 +1,6 @@
 permalink: /:year/:month/:day/:title.html
 course_url: "http://www.schulichnotes.com"
 course_name: "Schulich Notes"
-
+exclude: [resources]
 rdiscount:
   extensions: [smart]
