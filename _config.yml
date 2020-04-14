@@ -4,3 +4,4 @@ course_name: "Schulich Notes"
 exclude: [resources/shared_files]
 rdiscount:
   extensions: [smart]
+theme: jekyll-theme-minimal
